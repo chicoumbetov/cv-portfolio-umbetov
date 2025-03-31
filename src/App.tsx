@@ -9,6 +9,7 @@ import { Languages } from "./components/Languages";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { MobileMenu } from "./components/MobileMenu";
 import { Navbar } from "./components/Navbar";
+import Projects from "./components/Projects";
 import { Skills } from "./components/Skills";
 
 import "./App.css";
@@ -40,7 +41,9 @@ function App() {
         <Home darkMode={darkMode} setDarkMode={setDarkMode} />
         <Skills />
         <Experience />
+        <Projects />
         <Education />
+
         <Languages />
         <BackToTop darkMode={darkMode} />
         <Contact />
