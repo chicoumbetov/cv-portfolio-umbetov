@@ -6,17 +6,19 @@ import "./css/navbar.css";
 
 type NavbarProps = {
   menuOpen: boolean;
+  setMenuOpen: Dispatch<SetStateAction<boolean>>;
 
   darkMode: boolean;
   setDarkMode: Dispatch<SetStateAction<boolean>>;
 };
 
-export const Navbar = ({ menuOpen, darkMode, setDarkMode }: NavbarProps) => {
+export const Navbar = ({
+  menuOpen,
+  setMenuOpen,
+  darkMode,
+  setDarkMode,
+}: NavbarProps) => {
   const [logo, setLogo] = useState(logo1);
-
-  useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
-  }, [menuOpen]);
 
   useEffect(() => {
     const nav = document.querySelector("nav") as HTMLElement;
@@ -85,6 +87,10 @@ export const Navbar = ({ menuOpen, darkMode, setDarkMode }: NavbarProps) => {
     };
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+  }, [menuOpen]);
+
   return (
     <nav
       className={`fixed top-0 w-full z-40 bg-${
@@ -102,34 +108,40 @@ export const Navbar = ({ menuOpen, darkMode, setDarkMode }: NavbarProps) => {
             umbetov<span className="text-blue-500">.tech </span>
           </a>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <a className="navbar-brand js-scroll" href="#page-top">
-              <img
-                src={logo}
-                alt="logo"
-                style={{ maxWidth: "50px", borderRadius: "10px" }}
-              />
-            </a>
+          <a className="navbar-brand js-scroll" href="#page-top">
+            <img
+              src={logo}
+              alt="logo"
+              style={{ maxWidth: "50px", borderRadius: "10px" }}
+            />
+          </a>
+
+          <div className="flex">
+            <BsFillMoonStarsFill
+              onClick={() => setDarkMode(!darkMode)}
+              className={` cursor-pointer text-2xl`}
+              fill={darkMode ? "white" : "black"}
+            />
+            {/* Mobile Menu Icon*/}
             <button
-              className={`${
+              className={`mx-2 w-7 h-5 relative cursor-pointer z-40 md:hidden ${
                 darkMode ? "white" : "black"
-              } navbar-toggler collapsed`}
+              } navbar-toggler ${menuOpen ? "" : "collapsed"}`}
               type="button"
               data-toggle="collapse"
               data-target="#navbarDefault"
               aria-controls="navbarDefault"
-              aria-expanded="false"
+              aria-expanded={menuOpen}
               aria-label="Toggle navigation"
+              onClick={() => setMenuOpen((prev) => !prev)}
             >
-              <span></span>
-              <span></span>
-              <span></span>
+              <span className={darkMode ? "bg-white" : "bg-black"}></span>
+              <span className={darkMode ? "bg-white" : "bg-black"}></span>
+              <span className={darkMode ? "bg-white" : "bg-black"}></span>
             </button>
-            <BsFillMoonStarsFill
-              onClick={() => setDarkMode(!darkMode)}
-              className={` cursor-pointer text-1xl`}
-              fill={darkMode ? "white" : "black"}
-            />
+          </div>
+          <div className="hidden md:flex items-center space-x-8">
+            {/* Desktop */}
             <a
               href="#home"
               className={`px-0 py-2 ${

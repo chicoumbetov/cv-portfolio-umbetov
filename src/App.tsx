@@ -1,12 +1,17 @@
 import { useState } from "react";
-import "./App.css";
+
+import BackToTop from "./components/BackToTop";
+import { Contact } from "./components/Contact";
 import { Education } from "./components/Education";
 import { Experience } from "./components/Experience";
 import Home from "./components/Home";
+import { Languages } from "./components/Languages";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { MobileMenu } from "./components/MobileMenu";
 import { Navbar } from "./components/Navbar";
 import { Skills } from "./components/Skills";
+
+import "./App.css";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -36,6 +41,9 @@ function App() {
         <Skills />
         <Experience />
         <Education />
+        <Languages />
+        <BackToTop darkMode={darkMode} />
+        <Contact />
       </div>
     </>
   );

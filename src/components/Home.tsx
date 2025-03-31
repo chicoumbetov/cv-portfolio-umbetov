@@ -120,14 +120,6 @@ const Home = ({ darkMode }: HomeProps) => {
           </p>
           <p className="pt-3">
             <a
-              className={`btn btn-primary btn js-scroll px-4`}
-              href="#work"
-              role="button"
-            >
-              Check portfolio
-            </a>
-
-            <a
               className={`px-4 py-2 primary_btn text-black`}
               href="#work"
               role="button"

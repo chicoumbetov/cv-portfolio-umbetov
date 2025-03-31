@@ -11,17 +11,15 @@ export const MobileMenu = ({
   menuOpen,
   setMenuOpen,
 }: NavbarProps) => {
-  console.log("MobileMenu :", menuOpen);
-
   return (
     <div
-      className={`fixed top-0 left-0 w-full ${
+      className={`fixed top-12 right-0 w-full ${
         darkMode ? "bg-black" : "bg-white"
       } z-40 flex flex-col items-center justify-center
                      transition-all duration-300 ease-in-out
                      ${
                        menuOpen
-                         ? "h-screen opacity-100 pointer-events-auto"
+                         ? "h-1/2 opacity-100 pointer-events-auto"
                          : "h-0 opacity-0 pointer-events-none"
                      }
                    `}
