@@ -41,12 +41,12 @@ function App() {
           setMenuOpen={setMenuOpen}
         />
         <Home darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Education />
+        <Skills darkMode={darkMode} />
+        <Experience darkMode={darkMode} />
+        <Projects darkMode={darkMode} />
+        <Education darkMode={darkMode} />
 
-        <Languages />
+        <Languages darkMode={darkMode} />
         <BackToTop darkMode={darkMode} />
         <Contact />
       </div>

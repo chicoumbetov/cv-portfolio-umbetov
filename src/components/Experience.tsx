@@ -1,6 +1,11 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
-export const Experience = () => {
+type ExperienceProps = {
+  darkMode: boolean;
+};
+
+export const Experience = ({ darkMode }: ExperienceProps) => {
+  console.log(darkMode);
   return (
     <section
       id="experience"

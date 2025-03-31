@@ -2,14 +2,20 @@ import { categories } from "../assets/mockData/data";
 import CategoryItem from "./CategoryItem";
 import "./css/portfolio.css";
 
-const Projects = () => {
+type ProjectsProps = {
+  darkMode: boolean;
+};
+
+const Projects = ({ darkMode }: ProjectsProps) => {
   return (
     <div>
       <div className="about-mf sect-pt4 route">
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <div className="box-shadow-full">
+              <div
+                className={`box-shadow-full ${darkMode ? "white" : "black}"}`}
+              >
                 <div className="row">
                   <div className="col-md-6 col-md-12">
                     <section
@@ -20,7 +26,9 @@ const Projects = () => {
                         <div className="row">
                           <div className="col-md-6 col-md-12">
                             <div className="title-box text-center">
-                              <h5 className="title-a">Portfolio</h5>
+                              <h5 className="text-4xl font-bold uppercase">
+                                Portfolio
+                              </h5>
                               <p className="subtitle-a">
                                 Portfolio itself is done by React JS,
                                 Typescript, SASS, Bootstrap You can click and

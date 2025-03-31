@@ -1,6 +1,12 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
-export const Languages = () => {
+type LanguagesProps = {
+  darkMode: boolean;
+};
+
+export const Languages = ({ darkMode }: LanguagesProps) => {
+  console.log("darkMode :", darkMode);
+
   return (
     <section
       id="education"

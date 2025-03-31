@@ -1,6 +1,11 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
-export const Education = () => {
+type EducationProps = {
+  darkMode: boolean;
+};
+
+export const Education = ({ darkMode }: EducationProps) => {
+  console.log(darkMode);
   return (
     <section
       id="education"

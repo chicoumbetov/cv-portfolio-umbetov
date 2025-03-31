@@ -1,6 +1,11 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
-export const Skills = () => {
+type SkillsProps = {
+  darkMode: boolean;
+};
+
+export const Skills = ({ darkMode }: SkillsProps) => {
+  console.log("darkMode :", darkMode);
   const frontendSkills = [
     "React",
     "React Native",
