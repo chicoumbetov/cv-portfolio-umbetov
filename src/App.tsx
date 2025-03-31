@@ -1,15 +1,17 @@
 import { useState } from "react";
 import "./App.css";
-import { About } from "./components/About";
+import { Education } from "./components/Education";
+import { Experience } from "./components/Experience";
 import Home from "./components/Home";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { MobileMenu } from "./components/MobileMenu";
 import { Navbar } from "./components/Navbar";
+import { Skills } from "./components/Skills";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
       >
         <Navbar
           menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
           darkMode={darkMode}
           setDarkMode={setDarkMode}
         />
@@ -30,7 +33,9 @@ function App() {
           setMenuOpen={setMenuOpen}
         />
         <Home darkMode={darkMode} setDarkMode={setDarkMode} />
-        <About />
+        <Skills />
+        <Experience />
+        <Education />
       </div>
     </>
   );
