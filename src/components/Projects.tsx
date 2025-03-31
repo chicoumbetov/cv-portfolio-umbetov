@@ -14,7 +14,9 @@ const Projects = ({ darkMode }: ProjectsProps) => {
           <div className="row">
             <div className="col-sm-12">
               <div
-                className={`box-shadow-full ${darkMode ? "white" : "black}"}`}
+                className={`box-shadow-full ${
+                  darkMode ? "bg-white" : "bg-black}"
+                }`}
               >
                 <div className="row">
                   <div className="col-md-6 col-md-12">
@@ -26,7 +28,11 @@ const Projects = ({ darkMode }: ProjectsProps) => {
                         <div className="row">
                           <div className="col-md-6 col-md-12">
                             <div className="title-box text-center">
-                              <h5 className="text-4xl font-bold uppercase">
+                              <h5
+                                className={`text-4xl font-bold uppercase ${
+                                  darkMode ? "black" : "white}"
+                                }`}
+                              >
                                 Portfolio
                               </h5>
                               <p className="subtitle-a">
