@@ -2,9 +2,7 @@
 
 .back-to-top {
   position: fixed;
-  display: none;
-  background: #000;
-  color: #fff;
+  /* display: none; */
   width: 44px;
   height: 44px;
   text-align: center;
@@ -15,11 +13,6 @@
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
-}
-
-.back-to-top i {
-  padding-top: 12px;
-  color: #fff;
 }
 
 @media (max-width: 768px) {
