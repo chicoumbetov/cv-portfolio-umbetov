@@ -12,6 +12,8 @@ import { Navbar } from "./components/Navbar";
 import Projects from "./components/Projects";
 import { Skills } from "./components/Skills";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 
 function App() {

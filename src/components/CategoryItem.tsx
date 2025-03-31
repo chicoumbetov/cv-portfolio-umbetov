@@ -1,3 +1,5 @@
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from "styled-components";
 
 const ProjectCardContainer = styled.div`
@@ -11,6 +13,7 @@ const ProjectCardImage = styled.img`
   border-radius: 20px 20px 0 0;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 `;
 
 const ProjectCard = styled.div`
@@ -69,43 +72,46 @@ type CategoryItemProps = {
   };
 };
 
-const CategoryItem = (item: CategoryItemProps) => {
+const CategoryItem = ({ item }: CategoryItemProps) => {
   return (
     <ProjectCardContainer className="col-12 col-lg-4">
       <ProjectCard>
         <ProjectCardMedia>
-          <div className={"project-card-image"}>
-            <a href={item.item.img} data-lightbox="gallery-vmarine">
-              <ProjectCardImage src={item?.item.img} />
-            </a>
-            {item &&
-              item.item &&
-              item.item.screenshots &&
-              item.item.screenshots.map((each) => (
-                <a
-                  href={each}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              ))}
-          </div>
+          <Carousel showThumbs={false} infiniteLoop showArrows={true}>
+            {[item.img, ...item.screenshots].map(
+              (src, index) =>
+                src && (
+                  <div key={index}>
+                    <ProjectCardImage src={src} alt={`Slide ${index}`} />
+                  </div>
+                )
+            )}
+          </Carousel>
         </ProjectCardMedia>
         <ProjectCardInformation>
-          <Title>{item.item.title}</Title>
-          <p>Technologies: {item.item.usedTechno}</p>
-          <a href={item.item.projectLink}>
-            <Button onClick={() => {}}>Project link</Button>
-          </a>
-          {item.item.githubLink && (
-            <a href={item.item.githubLink}>
-              <Button onClick={() => {}}>Github code link</Button>
+          <Title>{item.title}</Title>
+          <p>Technologies: {item.usedTechno}</p>
+          {item.projectLink && (
+            <a
+              href={item.projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Project link</Button>
             </a>
           )}
-          {item.item.backendLink && (
-            <a href={item.item.backendLink}>
-              <Button onClick={() => {}}>Back - End link</Button>
+          {item.githubLink && (
+            <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
+              <Button>Github code link</Button>
+            </a>
+          )}
+          {item.backendLink && (
+            <a
+              href={item.backendLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Back - End link</Button>
             </a>
           )}
         </ProjectCardInformation>
