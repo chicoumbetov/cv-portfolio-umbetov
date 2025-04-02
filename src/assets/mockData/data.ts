@@ -1,5 +1,19 @@
 // import carousel from "../img/carousel/screencapture-localhost-3000-2021-01-06-23_01_05.png";
 
+// * Gen AI interview Agent
+import AiInterview from "../img/gen-ai-interview/ai-interviews.png";
+import CallAiInterview from "../img/gen-ai-interview/call-ai-interviews.png";
+import DashboardAiInterview from "../img/gen-ai-interview/Dashboard.png";
+import FeedbackAiInterview from "../img/gen-ai-interview/feedback-ai-interviews.png";
+import ConfirmationAiInterview from "../img/gen-ai-interview/InterviewConfirmation.png";
+
+// karavan ImmiGuide
+import HomeKaravan from "../img/karavanImmiGuide/Home.png";
+import ApiKaravan from "../img/karavanImmiGuide/KaravanApi.png";
+import LoginKaravan from "../img/karavanImmiGuide/Login.png";
+import ProfileKaravan from "../img/karavanImmiGuide/Profile.png";
+import SearchResultKaravan from "../img/karavanImmiGuide/SearchResult.png";
+
 // 1fit.app
 import stock1fit1 from "../img/1fitApp/1fit.app.png";
 import stock1fit2 from "../img/1fitApp/1fit.app2.png";
@@ -122,6 +136,67 @@ export const sliderItems = [
 
 export const categories = [
   {
+    id: 32025,
+    img: DashboardAiInterview,
+    title:
+      "Generative AI Agent for Tech Behavioral Interview with Analysis Report",
+    projectLink: "https://ai-interviews-ecru.vercel.app/",
+    screenshots: [
+      DashboardAiInterview,
+      ConfirmationAiInterview,
+      AiInterview,
+      CallAiInterview,
+      FeedbackAiInterview,
+    ],
+    usedTechno:
+      "React JS, Typescript, Vapi, Gemini, Google AI Studio, Firebase",
+  },
+  {
+    id: 2024,
+    img: HomeKaravan,
+    title:
+      "Karavan (ex ImmiGuide) crossplatform application for P2P logistics management (Web/iOS/Android/ Telegram Mini Apps Stores)",
+    projectLink: "https://immi-guide.app/",
+    screenshots: [
+      ApiKaravan,
+      LoginKaravan,
+      HomeKaravan,
+      ProfileKaravan,
+      SearchResultKaravan,
+    ],
+    usedTechno:
+      "NodeJS, React Native, RabbitMQ, Microservices, MongoDB, NodeEmail Express,",
+  },
+  {
+    id: 20232025,
+    img: stock1fit1,
+    title:
+      "Trace Software International (Group Trace) - Application for designing electrical and photovoltaic installations, the energy sizing of our buildings and the optimisation of an installation’s carbon footprint",
+    projectLink:
+      "https://www.youtube.com/watch?v=V-qxT9WT2PU&list=PLJELWlAY3-461qj5JkRLgsjnahPXDrSi9",
+    screenshots: [],
+    usedTechno:
+      "React JS, Typescript, C#, .Net8, hot chocolate, MongoDB, Storybook Design System",
+  },
+  {
+    id: 20222023,
+    img: stock1fit2,
+    title:
+      "BIM&CO (Group Trace) - Data Management in Construction domain as Autodesk/Excel Plugin",
+    projectLink: "https://www.youtube.com/watch?v=tJyaJxvaaNs",
+    screenshots: [],
+    usedTechno: "React JS, Typescript, Redux Saga, Storybook Design System",
+  },
+  {
+    id: 2022,
+    img: stock1fit1,
+    title:
+      "Global Climate Initiative - Carbon emission calculation and reduction",
+    projectLink: "",
+    screenshots: [],
+    usedTechno: "React JS, Typescript, HTML5, CSS3, SASS",
+  },
+  {
     id: 1,
     img: stock1fit1,
     title: "1fit.app",
@@ -158,7 +233,7 @@ export const categories = [
     title: "Scanflock done, deployment in process",
     // projectLink: "",
     githubLink: "https://github.com/chicoumbetov/vetani_app",
-    screenshots: [, scanflock3],
+    screenshots: [scanflock3],
     usedTechno:
       "React Native, Typescript, AWS cloud services: AppSync, Cognito, Dynamo DB",
   },
@@ -177,6 +252,14 @@ export const categories = [
     ],
     usedTechno:
       "Javascript, PHP, MySQL, HTML5, CSS3, SASS, Bootstrap, LightSlier, Google maps API",
+  },
+  {
+    id: 10,
+    img: pureJs2,
+    title: "Lydall - Thermo acoustical materials",
+    projectLink: "",
+    githubLink: "",
+    screenshots: [],
   },
   {
     id: 5,
@@ -247,6 +330,7 @@ export const categories = [
       pureJs12,
     ],
   },
+  /*
   {
     id: 11,
     img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
@@ -254,6 +338,7 @@ export const categories = [
     // projectLink: "",
     screenshots: [],
   },
+  */
   {
     id: 12,
     img: ohmyfood1,
@@ -274,13 +359,6 @@ export const categories = [
     title: "Reservia hotels reservation app",
     projectLink: "https://chicoumbetov.github.io/umbetov_shynggys_2_18042021/",
     screenshots: [reservia2],
-  },
-  {
-    id: 15,
-    img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    title: "FullStack Resto Angular js App in process",
-    githubLink: "https://github.com/chicoumbetov/resto_angular",
-    screenshots: [],
   },
 ];
 
