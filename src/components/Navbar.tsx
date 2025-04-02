@@ -1,7 +1,5 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import logo2 from "../assets/img/3x4.jpg";
-import logo1 from "../assets/img/LisbonWebSummit.jpg";
 import "./css/navbar.css";
 
 type NavbarProps = {
@@ -18,8 +16,6 @@ export const Navbar = ({
   darkMode,
   setDarkMode,
 }: NavbarProps) => {
-  const [logo, setLogo] = useState(logo1);
-
   useEffect(() => {
     const nav = document.querySelector("nav") as HTMLElement;
     const navHeight = nav?.offsetHeight || 0;
@@ -44,11 +40,9 @@ export const Navbar = ({
       if (window.scrollY > 50) {
         navbar.classList.add("navbar-reduce");
         navbar.classList.remove("navbar-trans");
-        setLogo(logo2);
       } else {
         navbar.classList.add("navbar-trans");
         navbar.classList.remove("navbar-reduce");
-        setLogo(logo1);
       }
     };
 
@@ -108,6 +102,35 @@ export const Navbar = ({
             umbetov<span className="text-blue-500">.tech </span>
           </a>
 
+          <div className="socials">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/chicoumbetov?tab=repositories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="ico-circle">
+                    <i className="ion-social-github"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/shynggys-u/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="ico-circle">
+                    <i className="ion-social-linkedin"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/*
           <a className="navbar-brand js-scroll" href="#page-top">
             <img
               src={logo}
@@ -115,6 +138,7 @@ export const Navbar = ({
               style={{ maxWidth: "50px", borderRadius: "10px" }}
             />
           </a>
+          */}
 
           <div className="flex">
             <BsFillMoonStarsFill
