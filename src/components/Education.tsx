@@ -13,21 +13,15 @@ export const Education = ({ darkMode }: EducationProps) => {
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <div
-            id="education"
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8"
-          >
+          <div id="education" className=" gap-4 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong> B.S. in Computer Science </strong> - XYZ University
-                  (2016-2020)
+                  <strong> Master Bac +5 in Science and Technologies </strong> -
+                  University of Poitiers (2019)
                 </li>
-                <li>
-                  Relevant Coursework: Data Structures, Web Development, Cloud
-                  Computing...
-                </li>
+                <li>Python, R, Research at Orano</li>
               </ul>
             </div>
           </div>
