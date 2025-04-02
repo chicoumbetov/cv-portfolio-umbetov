@@ -54,6 +54,26 @@ const Home = ({ darkMode }: HomeProps) => {
               <span>View projects</span>
             </a>
           </p>
+
+          <p>
+            <a
+              className={`px-4 py-2 primary_btn text-black`}
+              href={CV_fr}
+              target="blank"
+            >
+              <span>Download CV in french</span>
+            </a>
+            <div className="pt-3">
+              <a
+                className={`px-4 py-2 primary_btn text-black`}
+                href={CV_en}
+                target="blank"
+              >
+                <span>Download CV in english</span>
+              </a>
+            </div>
+          </p>
+
           <p className="pt-3">
             <a
               className={`px-4 py-2 primary_btn text-black`}
@@ -62,17 +82,6 @@ const Home = ({ darkMode }: HomeProps) => {
             >
               <span>Contact Me</span>
             </a>
-          </p>
-
-          <p>
-            <a className="primary_btn" href={CV_fr} target="blank">
-              <span>Download CV in french</span>
-            </a>
-            <div className="pt-3">
-              <a className="primary_btn" href={CV_en} target="blank">
-                <span>Download CV in english</span>
-              </a>
-            </div>
           </p>
         </div>
       </div>
