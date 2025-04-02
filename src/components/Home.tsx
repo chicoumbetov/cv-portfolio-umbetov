@@ -1,6 +1,9 @@
 import { Dispatch, SetStateAction } from "react";
 import { ReactTyped } from "react-typed";
 
+import CV_en from "../assets/CV_Umbetov_eng.pdf";
+import CV_fr from "../assets/CV_Umbetov_fr.pdf";
+
 import "./css/Home.style.css";
 import "./stars.css";
 
@@ -59,6 +62,17 @@ const Home = ({ darkMode }: HomeProps) => {
             >
               <span>Contact Me</span>
             </a>
+          </p>
+
+          <p>
+            <a className="primary_btn" href={CV_fr} target="blank">
+              <span>Download CV in french</span>
+            </a>
+            <div className="pt-3">
+              <a className="primary_btn" href={CV_en} target="blank">
+                <span>Download CV in english</span>
+              </a>
+            </div>
           </p>
         </div>
       </div>
