@@ -28,25 +28,31 @@ const Projects = ({ darkMode }: ProjectsProps) => {
                         <div className="row">
                           <div className="col-md-6 col-md-12">
                             <div className="title-box text-center">
-                              <h5
+                              <h4
                                 className={`text-4xl font-bold uppercase ${
-                                  darkMode ? "black" : "white}"
+                                  darkMode ? "text-black" : "text-white}"
                                 }`}
                               >
-                                Portfolio
-                              </h5>
-                              <p className="subtitle-a">
-                                Portfolio itself is done by React JS,
-                                Typescript, SASS, Bootstrap You can click and
-                                check deployed project, github code, deployed
-                                backend.
+                                Projects
+                              </h4>
+                              <p
+                                className={`${
+                                  darkMode ? "text-black" : "text-white}"
+                                }`}
+                              >
+                                This portfolio is built with React.js,
+                                TypeScript, SASS, and Bootstrap. You can explore
+                                the deployed project, check the GitHub
+                                repository, or view the backend.
                               </p>
-                              <p>
-                                Click on image to view more screenshots or just
-                                click on project link to go directly to see
-                                project
+                              <p
+                                className={`line-mf ${
+                                  darkMode ? "text-black" : "text-white}"
+                                }`}
+                              >
+                                Click on an image to see more screenshots, or
+                                use the project link to visit it directly.
                               </p>
-                              <div className="line-mf"></div>
                             </div>
                           </div>
                         </div>
