@@ -14,6 +14,19 @@ import LoginKaravan from "../img/karavanImmiGuide/Login.png";
 import ProfileKaravan from "../img/karavanImmiGuide/Profile.png";
 import SearchResultKaravan from "../img/karavanImmiGuide/SearchResult.png";
 
+// * tsi
+import tsi1 from "../img/tsi/1.png";
+import tsi2 from "../img/tsi/2.png";
+import tsi3 from "../img/tsi/3.png";
+import tsi4 from "../img/tsi/4.png";
+
+// * bim
+import bim1 from "../img/bim/1.png";
+import bim2 from "../img/bim/2.png";
+import bim3 from "../img/bim/3.png";
+import bim4 from "../img/bim/4.png";
+import bim5 from "../img/bim/5.png";
+
 // 1fit.app
 import stock1fit1 from "../img/1fitApp/1fit.app.png";
 import stock1fit2 from "../img/1fitApp/1fit.app2.png";
@@ -170,24 +183,24 @@ export const categories = [
   },
   {
     id: 20232025,
-    img: stock1fit1,
+    img: tsi1,
     title: "Trace Software International (Group Trace)",
     description:
       "Application for designing electrical and photovoltaic installations, the energy sizing of our buildings and the optimisation of an installation’s carbon footprint",
     projectLink:
       "https://www.youtube.com/watch?v=V-qxT9WT2PU&list=PLJELWlAY3-461qj5JkRLgsjnahPXDrSi9",
-    screenshots: [],
+    screenshots: [tsi2, tsi3, tsi4],
     usedTechno:
       "React JS, Typescript, C#, .Net8, hot chocolate, MongoDB, Storybook Design System",
   },
   {
     id: 20222023,
-    img: stock1fit2,
+    img: bim1,
     title: "BIM&CO (Group Trace)",
     description:
       "Data Management in Construction domain as Autodesk/Excel Plugin",
     projectLink: "https://www.youtube.com/watch?v=tJyaJxvaaNs",
-    screenshots: [],
+    screenshots: [bim2, bim3, bim4, bim5],
     usedTechno: "React JS, Typescript, Redux Saga, Storybook Design System",
   },
   {
@@ -203,17 +216,16 @@ export const categories = [
     img: stock1fit1,
     title: "1fit.app",
     projectLink: "https://1fit.app",
-    screenshots: [stock1fit1, stock1fit2, stock1fit3],
+    screenshots: [stock1fit2, stock1fit3],
     usedTechno: "React JS, Typescript, HTML5, CSS3, SASS",
   },
   {
     id: 2,
-    img: omedom7immo,
+    img: omedom1,
     title: "Omedom",
     projectLink: "https://app.omedom.com",
     githubLink: "https://github.com/chicoumbetov/ui_app",
     screenshots: [
-      omedom1,
       omedom2treso,
       omedom3bankAcc,
       omedom4budgetOption,
