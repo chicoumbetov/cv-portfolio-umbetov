@@ -1,3 +1,4 @@
+import { Languages } from "./Languages";
 import { RevealOnScroll } from "./RevealOnScroll";
 
 type EducationProps = {
@@ -24,6 +25,7 @@ export const Education = ({ darkMode }: EducationProps) => {
                 <h6>Research at Orano using Python, R, Excell</h6>
               </ul>
             </div>
+            <Languages darkMode={darkMode} />
           </div>
         </div>
       </RevealOnScroll>

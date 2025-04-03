@@ -14,8 +14,8 @@ const Projects = ({ darkMode }: ProjectsProps) => {
           <div className="row">
             <div className="col-sm-12">
               <div
-                className={`box-shadow-full ${
-                  darkMode ? "bg-white" : "bg-black}"
+                className={`box-shadow-full border-1 ${
+                  darkMode ? "bg-white" : "bg-black border-white"
                 }`}
               >
                 <div className="row">

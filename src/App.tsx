@@ -5,7 +5,6 @@ import { Contact } from "./components/Contact";
 import { Education } from "./components/Education";
 import { Experience } from "./components/Experience";
 import Home from "./components/Home";
-import { Languages } from "./components/Languages";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { MobileMenu } from "./components/MobileMenu";
 import { Navbar } from "./components/Navbar";
@@ -45,8 +44,6 @@ function App() {
         <Experience darkMode={darkMode} />
         <Projects darkMode={darkMode} />
         <Education darkMode={darkMode} />
-
-        <Languages darkMode={darkMode} />
         <BackToTop darkMode={darkMode} />
         <Contact />
       </div>
