@@ -21,7 +21,7 @@ export const Education = ({ darkMode }: EducationProps) => {
                   <strong> Master Bac +5 in Science and Technologies </strong> -
                   University of Poitiers (2019)
                 </li>
-                <li>Python, R, Research at Orano</li>
+                <h6>Research at Orano using Python, R, Excell</h6>
               </ul>
             </div>
           </div>
