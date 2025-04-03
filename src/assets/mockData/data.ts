@@ -154,8 +154,9 @@ export const categories = [
   {
     id: 2024,
     img: HomeKaravan,
-    title:
-      "Karavan (ex ImmiGuide) crossplatform application for P2P logistics management (Web/iOS/Android/ Telegram Mini Apps Stores)",
+    title: "Karavan (ex ImmiGuide)",
+    description:
+      "crossplatform application for P2P logistics management (Web/iOS/Android/ Telegram Mini Apps Stores)",
     projectLink: "https://immi-guide.app/",
     screenshots: [
       ApiKaravan,
@@ -170,8 +171,9 @@ export const categories = [
   {
     id: 20232025,
     img: stock1fit1,
-    title:
-      "Trace Software International (Group Trace) - Application for designing electrical and photovoltaic installations, the energy sizing of our buildings and the optimisation of an installation’s carbon footprint",
+    title: "Trace Software International (Group Trace)",
+    description:
+      "Application for designing electrical and photovoltaic installations, the energy sizing of our buildings and the optimisation of an installation’s carbon footprint",
     projectLink:
       "https://www.youtube.com/watch?v=V-qxT9WT2PU&list=PLJELWlAY3-461qj5JkRLgsjnahPXDrSi9",
     screenshots: [],
@@ -181,8 +183,9 @@ export const categories = [
   {
     id: 20222023,
     img: stock1fit2,
-    title:
-      "BIM&CO (Group Trace) - Data Management in Construction domain as Autodesk/Excel Plugin",
+    title: "BIM&CO (Group Trace)",
+    description:
+      "Data Management in Construction domain as Autodesk/Excel Plugin",
     projectLink: "https://www.youtube.com/watch?v=tJyaJxvaaNs",
     screenshots: [],
     usedTechno: "React JS, Typescript, Redux Saga, Storybook Design System",
@@ -190,8 +193,7 @@ export const categories = [
   {
     id: 2022,
     img: stock1fit1,
-    title:
-      "Global Climate Initiative - Carbon emission calculation and reduction",
+    title: "Global Climate Initiative",
     projectLink: "",
     screenshots: [],
     usedTechno: "React JS, Typescript, HTML5, CSS3, SASS",

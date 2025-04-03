@@ -26,6 +26,11 @@ export const Experience = ({ darkMode }: ExperienceProps) => {
                 <h5 className="font-bold">Developer</h5>
                 <div className="space-y-1 text-gray-200">
                   <p>
+                    Application for designing electrical and photovoltaic
+                    installations, the energy sizing of our buildings and the
+                    optimisation of an installation’s carbon footprint
+                  </p>
+                  <p>
                     Created from scratch electrical schema builder applications.
                   </p>
                   <p>
@@ -42,13 +47,25 @@ export const Experience = ({ darkMode }: ExperienceProps) => {
                 </h4>
                 <h5>Developer</h5>
                 <p>Integration REST APIs</p>
+                <p>
+                  Data Management in Construction domain as Autodesk/Excel
+                  Plugin
+                </p>
               </div>
 
               <div>
                 <h4 className="font-semibold">
-                  Developer at Global Climate Initiatives (2022)
+                  Global Climate Initiatives (2022)
                 </h4>
+                <h5>Developer</h5>
                 <p>Integration REST APIs</p>
+                <p>Carbon emission calculation and reduction</p>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">Web Première (2021 - 2022)</h4>
+                <h5>Developer</h5>
+                <p>Development from scratch of 3 applications</p>
               </div>
             </div>
           </div>

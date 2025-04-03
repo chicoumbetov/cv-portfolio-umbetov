@@ -55,6 +55,7 @@ const Title = styled.h1`
 const Technologies = styled.h4`
   font-size: 11px;
   color: black;
+  margin-top: 5px;
   margin-bottom: 0px;
   background-color: white;
   padding: 3px;
@@ -69,7 +70,6 @@ const Button = styled.button`
   padding: 5px;
   background-color: white;
   color: black;
-  width: 100%;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
@@ -81,6 +81,7 @@ type CategoryItemProps = {
     id: number;
     img: string;
     title: string;
+    description?: string;
     projectLink?: string;
     backendLink?: string;
     screenshots: (string | undefined)[];
@@ -112,6 +113,9 @@ const CategoryItem = ({ item }: CategoryItemProps) => {
         <ProjectCardInformation>
           <div>
             <Title>{item.title}</Title>
+            {/*item?.description && (
+              <Description>{item?.description}</Description>
+            )*/}
             <Technologies>Technologies: {item.usedTechno}</Technologies>
           </div>
 
