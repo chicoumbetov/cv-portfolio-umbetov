@@ -14,6 +14,7 @@ import { Skills } from "./components/Skills";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
+import Certificates from "./components/Certificates";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -45,6 +46,7 @@ function App() {
         <Projects darkMode={darkMode} />
         <Education darkMode={darkMode} />
         <BackToTop darkMode={darkMode} />
+        <Certificates darkMode={darkMode} />
         <Contact />
       </div>
     </>
