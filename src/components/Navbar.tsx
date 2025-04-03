@@ -1,5 +1,7 @@
 import { Dispatch, SetStateAction, useEffect } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { TiAdjustBrightness } from "react-icons/ti";
 import "./css/navbar.css";
 
 type NavbarProps = {
@@ -93,6 +95,7 @@ export const Navbar = ({
     >
       <div className="max-w-5xl mx-auto px-0">
         <div className="flex justify-between mx-4 items-center h-12">
+          {/*
           <a
             href="#home"
             className={`font-mono text-xl font-bold ${
@@ -101,6 +104,7 @@ export const Navbar = ({
           >
             umbetov<span className="text-blue-500">.tech </span>
           </a>
+          */}
 
           <div className="socials">
             <ul>
@@ -109,10 +113,17 @@ export const Navbar = ({
                   href="https://github.com/chicoumbetov?tab=repositories"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className={`ico-circle border-1 ${
+                    darkMode
+                      ? "text-white bg-black border-white"
+                      : "text-black bg-white border-black"
+                  }`}
                 >
-                  <span className="ico-circle">
-                    <i className="ion-social-github"></i>
-                  </span>
+                  <FaGithub
+                    className={`${
+                      darkMode ? "text-white bg-black" : "text-black bg-white"
+                    }`}
+                  />
                 </a>
               </li>
 
@@ -121,10 +132,17 @@ export const Navbar = ({
                   href="https://www.linkedin.com/in/shynggys-u/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className={`ico-circle border-1 ${
+                    darkMode
+                      ? "text-white bg-black border-white"
+                      : "text-black bg-white border-black"
+                  }`}
                 >
-                  <span className="ico-circle">
-                    <i className="ion-social-linkedin"></i>
-                  </span>
+                  <FaLinkedin
+                    className={` ${
+                      darkMode ? "text-white bg-black" : "text-black bg-white"
+                    }`}
+                  />
                 </a>
               </li>
             </ul>
@@ -141,11 +159,20 @@ export const Navbar = ({
           */}
 
           <div className="flex">
-            <BsFillMoonStarsFill
-              onClick={() => setDarkMode(!darkMode)}
-              className={` cursor-pointer text-2xl`}
-              fill={darkMode ? "white" : "black"}
-            />
+            {darkMode ? (
+              <BsFillMoonStarsFill
+                onClick={() => setDarkMode(!darkMode)}
+                className={`cursor-pointer text-2xl`}
+                fill={"white"}
+              />
+            ) : (
+              <TiAdjustBrightness
+                onClick={() => setDarkMode(!darkMode)}
+                className={`cursor-pointer text-3xl`}
+                fill="black"
+              />
+            )}
+
             {/* Mobile Menu Icon*/}
             <button
               className={`mx-2 w-7 h-5 relative cursor-pointer z-40 md:hidden ${
