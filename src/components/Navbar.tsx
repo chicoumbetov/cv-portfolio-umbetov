@@ -195,7 +195,7 @@ export const Navbar = ({
             {/* Desktop */}
             <a
               href="#home"
-              className={`px-0 py-2 ${
+              className={`px-0 py-2 uppercase ${
                 darkMode ? "text-white" : "text-black"
               } transition-colors active`}
             >
@@ -203,7 +203,7 @@ export const Navbar = ({
             </a>
             <a
               href="#skills"
-              className={`px-0 py-2 ${
+              className={`px-0 py-2 uppercase ${
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll active`}
             >
@@ -211,7 +211,7 @@ export const Navbar = ({
             </a>
             <a
               href="#experience"
-              className={`px-0 py-2 ${
+              className={`px-0 py-2 uppercase ${
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll`}
             >
@@ -219,7 +219,7 @@ export const Navbar = ({
             </a>
             <a
               href="#projects"
-              className={`px-0 py-2 ${
+              className={`px-0 py-2 uppercase ${
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll`}
             >
@@ -227,7 +227,7 @@ export const Navbar = ({
             </a>
             <a
               href="#education"
-              className={`px-0 py-2 ${
+              className={`px-0 py-2 uppercase ${
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll`}
             >
@@ -245,7 +245,7 @@ export const Navbar = ({
             */}
             <a
               href="#contact"
-              className={`px-0 py-2 ${
+              className={`px-0 py-2 uppercase ${
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll`}
             >
