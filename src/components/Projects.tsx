@@ -9,7 +9,7 @@ type ProjectsProps = {
 
 const Projects = ({ darkMode }: ProjectsProps) => {
   return (
-    <div id="projects">
+    <div>
       <div className="about-mf sect-pt4 route">
         <div className="container">
           <div className="row">
