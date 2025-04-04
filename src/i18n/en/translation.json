@@ -227,5 +227,34 @@
       "errorComment": "An error occurred while adding a comment...",
       "errorDeleteComment": "An error occurred while deleting a comment..."
     }
+  },
+
+  "experiences": {
+    "2023": [
+      {
+        "name": "Web Developer",
+        "company": "Trace Software International (Group Trace)",
+        "desc": "Developed an electrical schematic builder from scratch, improving calculation time by 40% using advanced algorithms and deployed in 4 subsidiaries. Built a high-performance UI with React, Redux-Saga, and integrated CI/CD pipelines via Azure DevOps. Optimized system scalability using Redis caching for high load."
+      }
+    ],
+    "2022": [
+      {
+        "name": "Web Developer",
+        "company": "BIMandCO (Group Trace)",
+        "desc": "Created a data analysis service using React.js and JavaScript, enhancing insights into user engagement. Refactored the old UI codebase, improving performance and scalability. Fixed legacy issues and optimized a user authorization system to improve user experience."
+      },
+      {
+        "name": "Web Developer",
+        "company": "Global Climate Initiative",
+        "desc": "Developed UI for carbon emission reduction simulations (TS, React JS, Redux, etc.). Migrated an old real-time messaging system from jQuery to a RabbitMQ-based architecture, reducing API response latency."
+      }
+    ],
+    "2021": [
+      {
+        "name": "Mobile Developer (iOS, Android, web)",
+        "company": "Web Première",
+        "desc": "Developed multi-platform user interface applications (iOS, Android, Web) with React Native, serving over 10,000 users. Built scalable front-end solutions for B2C applications such as Omedom (multiple property management) and Scanflock (telemedicine platform). Integrated real-time video calls and document generation to enhance user interactivity."
+      }
+    ]
   }
 }

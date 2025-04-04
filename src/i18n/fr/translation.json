@@ -230,5 +230,34 @@
       "active-page": "la page active",
       "selection": "la sélection"
     }
+  },
+
+  "experiences": {
+    "2023": [
+      {
+        "name": "Développeur Web",
+        "company": "Trace Software International (Group Trace)",
+        "desc": "Développement d'un constructeur de schéma électrique à partir de zéro, améliorant le temps de calcul de 40% en utilisant des algorithmes avancés et déployé dans 4 filiales. Construction d'une UI performante avec React, Redux-Saga, intégration de pipelines CI/CD via Azure DevOps. Optimisation de l'évolutivité du système à l'aide de la mise en cache Redis pour forte charge."
+      }
+    ],
+    "2022": [
+      {
+        "name": "Développeur Web",
+        "company": "BIMandCO (Group Trace)",
+        "desc": "Création d'un service d'analyse de données à l'aide de React.js et de JavaScript, améliorant les connaissances sur l'engagement des utilisateurs. Refonte de l'ancienne base de code de l'interface utilisateur, améliorant les performances et l'évolutivité. Correction de l'héritage et optimisation d'un système d'autorisation des utilisateurs afin d'améliorer l'expérience utilisateur."
+      },
+      {
+        "name": "Développeur Web",
+        "company": "Global Climate Initiative",
+        "desc": "Développement pour les simulations de réduction des émissions de carbone UI (TS, React JS, Redux etc). Migration d'un ancien système de messagerie en temps réel de jQuery vers une architecture basée sur RabbitMQ, réduisant la latence des réponses à l'API."
+      }
+    ],
+    "2021": [
+      {
+        "name": "Développeur Mobile (iOS, Android, web)",
+        "company": "Web Première",
+        "desc": "Développement d'applications d'interface utilisateur multiplateformes (iOS, Android, Web) avec React Native, au service de plus de 10000 utilisateurs. Construire des solutions frontales évolutives pour des applications B2C telles que Omedom (gestion de propriétés multiples) et Scanflock (plateforme de télémédecine). Intégration d'appels vidéo en temps réel et de la génération de documents pour améliorer l'interactivité des utilisateurs."
+      }
+    ]
   }
 }
