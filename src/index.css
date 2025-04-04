@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import "tailwindcss";
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  font-family: "DM Sans", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   background: #0a0a0a;
   color: #f3f4f6;
@@ -50,4 +51,84 @@ body {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* AppWrap */
+.app__container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__wrapper {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  padding: 4rem 2rem;
+
+  @media screen and (max-width: 450px) {
+    padding: 4rem 1rem 2rem;
+  }
+}
+
+.copyright {
+  width: 100%;
+  padding: 2rem 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.copyright p {
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+@media screen and (max-width: 500px) {
+  .app__navigation,
+  .app__social {
+    display: none;
+  }
+
+  .copyright {
+    padding: 2rem;
+  }
+}
+
+.app__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.app__navigation .app__navigation-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cbcbcb;
+  margin: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.app__navigation .app__navigation-dot:hover {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 2000px) {
+  .app__navigation .app__navigation-dot {
+    width: 20px;
+    height: 20px;
+  }
 }
