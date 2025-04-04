@@ -1,9 +1,11 @@
+import { motion } from "framer-motion";
 import { Dispatch, SetStateAction, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TiAdjustBrightness } from "react-icons/ti";
 import Language from "../i18n/languages";
+
 import "./css/navbar.css";
 
 type NavbarProps = {
@@ -16,6 +18,16 @@ type NavbarProps = {
   language: Language;
   handleLanguageChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 };
+
+const sections = [
+  "home",
+  "skills",
+  "experience",
+  "skills",
+  "projects",
+  "education",
+  "contact",
+];
 
 export const Navbar = ({
   menuOpen,
@@ -113,17 +125,6 @@ export const Navbar = ({
     >
       <div className="max-w-5xl mx-auto px-0">
         <div className="flex justify-between mx-4 items-center h-12">
-          {/*
-          <a
-            href="#home"
-            className={`font-mono text-xl font-bold ${
-              darkMode ? "text-white" : "text-black"
-            }`}
-          >
-            umbetov<span className="text-blue-500">.tech </span>
-          </a>
-          */}
-
           <div className="socials">
             <ul>
               <li>
@@ -179,6 +180,9 @@ export const Navbar = ({
             id="language-select"
             value={language}
             onChange={handleLanguageChange}
+            className={`${
+              darkMode ? "bg-black text-white" : "bg-white text-black"
+            }`}
           >
             {languageOptions.map((option) => (
               <option key={option.value} value={option.value}>
@@ -222,64 +226,41 @@ export const Navbar = ({
           </div>
           <div className="hidden md:flex items-center space-x-4">
             {/* Desktop */}
-            <a
-              href="#home"
-              className={`px-0 py-2 uppercase ${
-                darkMode ? "text-white" : "text-black"
-              } transition-colors active`}
-            >
-              {t("home")}
-            </a>
-            <a
-              href="#skills"
-              className={`px-0 py-2 uppercase ${
-                darkMode ? "text-white" : "text-black"
-              } transition-colors nav-link js-scroll active`}
-            >
-              {t("skills")}
-            </a>
-            <a
-              href="#experience"
-              className={`px-0 py-2 uppercase ${
-                darkMode ? "text-white" : "text-black"
-              } transition-colors nav-link js-scroll`}
-            >
-              {t("experience")}
-            </a>
-            <a
-              href="#projects"
-              className={`px-0 py-2 uppercase ${
-                darkMode ? "text-white" : "text-black"
-              } transition-colors nav-link js-scroll`}
-            >
-              {t("projects")}
-            </a>
-            <a
-              href="#education"
-              className={`px-0 py-2 uppercase ${
-                darkMode ? "text-white" : "text-black"
-              } transition-colors nav-link js-scroll`}
-            >
-              {t("education")}
-            </a>
-            {/*
-            <a
-              href="#certificats"
-              className={`px-0 py-2 ${
-                darkMode ? "text-white" : "text-black"
-              } transition-colors nav-link js-scroll`}
-            >
-              {t("certificats")}
-            </a>
-            */}
-            <a
-              href="#contact"
-              className={`px-0 py-2 uppercase ${
-                darkMode ? "text-white" : "text-black"
-              } transition-colors nav-link js-scroll`}
-            >
-              {t("contact")}
-            </a>
+            {sections.map((item) => (
+              <a
+                key={`link-${item}`}
+                href={`#${item}`}
+                className={`px-0 py-2 uppercase ${
+                  darkMode ? "text-white" : "text-black"
+                } transition-colors`}
+              >
+                {t(item)}
+              </a>
+            ))}
+          </div>
+
+          {/* //* Mobile Menu Icon*/}
+          <div className={`app__navbar-menu items-center justify-center`}>
+            {menuOpen && (
+              <motion.div
+                className={`mt-12 ${
+                  darkMode ? "bg-black text-white" : "bg-white text-black"
+                }`}
+                whileInView={{ x: [300, 0] }}
+                transition={{ duration: 0.85, ease: "easeOut" }}
+              >
+                {/*<HiX onClick={() => setMenuOpen(false)} />*/}
+                <ul>
+                  {sections.map((item) => (
+                    <li key={item}>
+                      <a href={`#${item}`} onClick={() => setMenuOpen(false)}>
+                        {item}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            )}
           </div>
         </div>
       </div>
