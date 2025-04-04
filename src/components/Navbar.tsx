@@ -19,11 +19,10 @@ type NavbarProps = {
   handleLanguageChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 };
 
-const sections = [
+export const sections = [
   "home",
   "skills",
   "experience",
-  "skills",
   "projects",
   "education",
   "contact",
@@ -226,9 +225,9 @@ export const Navbar = ({
           </div>
           <div className="hidden md:flex items-center space-x-4">
             {/* Desktop */}
-            {sections.map((item) => (
+            {sections.map((item, i) => (
               <a
-                key={`link-${item}`}
+                key={`link-${i}`}
                 href={`#${item}`}
                 className={`px-0 py-2 uppercase ${
                   darkMode ? "text-white" : "text-black"
