@@ -1,4 +1,5 @@
 import { categories } from "../assets/mockData/data";
+import { AppWrap, MotionWrap } from "../wrapper";
 import CategoryItem from "./CategoryItem";
 import "./css/portfolio.css";
 
@@ -80,4 +81,4 @@ const Projects = ({ darkMode }: ProjectsProps) => {
   );
 };
 
-export default Projects;
+export default AppWrap(MotionWrap(Projects, ""), "projects", "");
