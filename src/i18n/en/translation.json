@@ -1,4 +1,5 @@
 {
+  "welcome": "Welcome to portfolio",
   "greeting": "Hello ${name}!",
   "language": "Language",
   "backgroundColor": "Background color",
@@ -81,6 +82,14 @@
   "french": "French",
   "english": "English",
   "german": "German",
+
+  "home": "Home",
+  "skills": "Skills",
+  "experience": "Experiences",
+  "projects": "Projects",
+  "education": "Education",
+  "contact": "Contact",
+
   "search": "Search",
   "link": "Link",
   "noDocumentAvailable": "No document available",

@@ -15,11 +15,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 import Certificates from "./components/Certificates";
+import i18nRoot, { i18nextLng } from "./i18n/config";
+import { Language } from "./types";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
+
+  const [language, setLanguage] = useState<Language>(Language.EN);
+
+  const handleLanguageChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    setLanguage(event.currentTarget.value as Language);
+    i18nRoot.changeLanguage(event.currentTarget.value as Language);
+    localStorage.setItem(i18nextLng, event.currentTarget.value);
+  };
 
   return (
     <>
@@ -34,6 +46,8 @@ function App() {
           setMenuOpen={setMenuOpen}
           darkMode={darkMode}
           setDarkMode={setDarkMode}
+          language={language}
+          handleLanguageChange={handleLanguageChange}
         />
         <MobileMenu
           darkMode={darkMode}

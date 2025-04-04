@@ -1,4 +1,5 @@
 {
+  "welcome": "Bienvenue à mon portfolio",
   "greeting": "Bonjour ${name}!",
   "language": "Langue",
   "backgroundColor": "Couleur de fond",
@@ -81,6 +82,14 @@
   "french": "Français",
   "english": "Anglais",
   "german": "Allemand",
+
+  "home": "Accueil",
+  "skills": "Compétences",
+  "experience": "Expériences",
+  "projects": "Projets",
+  "education": "Formation",
+  "contact": "Contact",
+
   "search": "Recherche",
   "link": "Lien",
   "noDocumentAvailable": "Aucun document disponible",

@@ -1,7 +1,9 @@
 import { Dispatch, SetStateAction, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TiAdjustBrightness } from "react-icons/ti";
+import Language from "../i18n/languages";
 import "./css/navbar.css";
 
 type NavbarProps = {
@@ -10,6 +12,9 @@ type NavbarProps = {
 
   darkMode: boolean;
   setDarkMode: Dispatch<SetStateAction<boolean>>;
+
+  language: Language;
+  handleLanguageChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 };
 
 export const Navbar = ({
@@ -17,7 +22,20 @@ export const Navbar = ({
   setMenuOpen,
   darkMode,
   setDarkMode,
+  language,
+  handleLanguageChange,
 }: NavbarProps) => {
+  const { t } = useTranslation();
+
+  const languageOptions = [
+    { label: t("english"), value: Language.EN },
+    { label: t("french"), value: Language.FR },
+    /*
+    { label: t("kazakh"), value: Language.KZ },
+    { label: t("russian"), value: Language.RU },
+    */
+  ];
+
   useEffect(() => {
     const nav = document.querySelector("nav") as HTMLElement;
     const navHeight = nav?.offsetHeight || 0;
@@ -157,6 +175,17 @@ export const Navbar = ({
             />
           </a>
           */}
+          <select
+            id="language-select"
+            value={language}
+            onChange={handleLanguageChange}
+          >
+            {languageOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
 
           <div className="flex">
             {darkMode ? (
@@ -191,7 +220,7 @@ export const Navbar = ({
               <span className={darkMode ? "bg-white" : "bg-black"}></span>
             </button>
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {/* Desktop */}
             <a
               href="#home"
@@ -199,7 +228,7 @@ export const Navbar = ({
                 darkMode ? "text-white" : "text-black"
               } transition-colors active`}
             >
-              Home
+              {t("home")}
             </a>
             <a
               href="#skills"
@@ -207,7 +236,7 @@ export const Navbar = ({
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll active`}
             >
-              Skills
+              {t("skills")}
             </a>
             <a
               href="#experience"
@@ -215,7 +244,7 @@ export const Navbar = ({
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll`}
             >
-              Experience
+              {t("experience")}
             </a>
             <a
               href="#projects"
@@ -223,7 +252,7 @@ export const Navbar = ({
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll`}
             >
-              Projects
+              {t("projects")}
             </a>
             <a
               href="#education"
@@ -231,7 +260,7 @@ export const Navbar = ({
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll`}
             >
-              Education
+              {t("education")}
             </a>
             {/*
             <a
@@ -240,7 +269,7 @@ export const Navbar = ({
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll`}
             >
-              Certificats
+              {t("certificats")}
             </a>
             */}
             <a
@@ -249,7 +278,7 @@ export const Navbar = ({
                 darkMode ? "text-white" : "text-black"
               } transition-colors nav-link js-scroll`}
             >
-              Contact
+              {t("contact")}
             </a>
           </div>
         </div>

@@ -4,6 +4,7 @@ import { ReactTyped } from "react-typed";
 import CV_en from "../assets/CV_Umbetov_eng.pdf";
 import CV_fr from "../assets/CV_Umbetov_fr.pdf";
 
+import { useTranslation } from "react-i18next";
 import "./css/Home.style.css";
 import "./stars.css";
 
@@ -13,6 +14,7 @@ type HomeProps = {
 };
 
 const Home = ({ darkMode }: HomeProps) => {
+  const { t } = useTranslation();
   return (
     <div id="home" className="intro route bg-image background">
       <div id="stars" />
@@ -21,7 +23,7 @@ const Home = ({ darkMode }: HomeProps) => {
 
       <div className="intro-content display-table">
         <div className="table-cell">
-          <h6 className="intro-title mb-1">Welcome to portfolio</h6>
+          <h6 className="intro-title mb-1">{t("welcome")}</h6>
           <h6 className="intro-title mb-10">Shynggys UMBETOV</h6>
 
           <div className={darkMode ? "dark" : "white"}>
@@ -33,10 +35,11 @@ const Home = ({ darkMode }: HomeProps) => {
             <strong className="text-slider">
               <ReactTyped
                 strings={[
-                  "Website developed using React JS",
+                  "Current portfolio - website developed using React JS",
                   "I am React Native Mobile Developer",
-                  "As well as React JS (MERN stack), AWS cloud microservices",
-                  "Click on check portfolio ",
+                  "React JS (MERN stack)",
+                  "Click on views projects",
+                  "Download CV below",
                 ]}
                 typeSpeed={30}
                 backDelay={1100}
@@ -55,7 +58,7 @@ const Home = ({ darkMode }: HomeProps) => {
             </a>
           </p>
 
-          <p>
+          <div>
             <a
               className={`px-4 py-2 primary_btn text-black`}
               href={CV_fr}
@@ -72,7 +75,7 @@ const Home = ({ darkMode }: HomeProps) => {
                 <span>Download CV in english</span>
               </a>
             </div>
-          </p>
+          </div>
 
           <p className="pt-3">
             <a

@@ -10,7 +10,6 @@ export const resources = {
   fr: {
     translation: translationFR,
   },
-  ru: {},
 } as const;
 
 const i18nRoot = i18n.createInstance();
