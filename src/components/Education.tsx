@@ -1,3 +1,4 @@
+import { AppWrap, MotionWrap } from "../wrapper";
 import { Languages } from "./Languages";
 import { RevealOnScroll } from "./RevealOnScroll";
 
@@ -5,8 +6,7 @@ type EducationProps = {
   darkMode: boolean;
 };
 
-export const Education = ({ darkMode }: EducationProps) => {
-  console.log(darkMode);
+const Education = ({ darkMode }: EducationProps) => {
   return (
     <section
       id="education"
@@ -32,3 +32,5 @@ export const Education = ({ darkMode }: EducationProps) => {
     </section>
   );
 };
+
+export default AppWrap(MotionWrap(Education, ""), "education", "");
