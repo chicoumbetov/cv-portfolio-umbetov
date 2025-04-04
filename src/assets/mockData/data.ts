@@ -269,7 +269,7 @@ export const categories = [
       "Javascript, PHP, MySQL, HTML5, CSS3, SASS, Bootstrap, LightSlier, Google maps API",
   },
   {
-    id: 10,
+    id: 20192021,
     img: pureJs2,
     title: "Lydall - Thermo acoustical materials",
     projectLink: "",
