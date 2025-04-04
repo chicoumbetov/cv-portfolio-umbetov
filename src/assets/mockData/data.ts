@@ -178,6 +178,7 @@ export const categories = [
       ProfileKaravan,
       SearchResultKaravan,
     ],
+    backendLink: "https://immi-guide-api-tdtp.onrender.com/api-docs/",
     usedTechno:
       "NodeJS, React Native, RabbitMQ, Microservices, MongoDB, NodeEmail Express,",
   },
