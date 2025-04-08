@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 
-import { client } from "../../client";
+// import { client } from "../../client";
+import emailjs from "emailjs-com";
+
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Footer.css";
@@ -25,9 +27,27 @@ const Footer = () =>
       setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
       setLoading(true);
 
+      const form = e.currentTarget; // Assuré d'être un HTMLFormElement
+
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
+          form, // Utilisation de e.currentTarget au lieu de e.target
+          import.meta.env.VITE_PUBLIC_KEY
+        )
+        .then(() => {
+          alert("Message Sent!");
+          setFormData({ name: "", email: "", message: "" });
+          setLoading(false);
+          setIsFormSubmitted(true);
+        })
+        .catch(() => alert("Oops! Something went wrong. Please try again."));
+      /*
       const contact = {
         _type: "contact",
         name: formData.name,
@@ -42,6 +62,7 @@ const Footer = () =>
           setIsFormSubmitted(true);
         })
         .catch((err: Error) => console.log(err));
+      */
     };
 
     return (
@@ -63,7 +84,10 @@ const Footer = () =>
           </div>
         </div>
         {!isFormSubmitted ? (
-          <div className={`app__footer-form app__flex `}>
+          <form
+            className={`app__footer-form app__flex `}
+            onSubmit={handleSubmit}
+          >
             <div className="app__flex">
               <input
                 type="text"
@@ -93,13 +117,13 @@ const Footer = () =>
                 className="p-text w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
               />
             </div>
-            <button type="button" className="p-text" onClick={handleSubmit}>
+            <button type="submit" className="p-text">
               {!loading ? "Send Message" : "Sending..."}
             </button>
-          </div>
+          </form>
         ) : (
           <div>
-            <h3 className="head-text">Thank you for getting in touch!</h3>
+            <h3 className="head-text">Thank you ! You email has been sent</h3>
           </div>
         )}
       </>
