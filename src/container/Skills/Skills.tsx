@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 // import { Tooltip } from "react-tooltip";
 
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Skills.css";
@@ -50,15 +50,17 @@ const mockSkills = [
   { name: "Redux", bgColor: "#F3E5F5", color: "#7B1FA2", icon: images.redux },
 ];
 
-type Work = { name: string; company: string; desc: string };
+// type Work = { name: string; company: string; desc: string };
 
+/*
 type ExperienceType = {
   works: Work[];
   year: number;
 };
+*/
 
 const Skills = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   /*
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState<
@@ -79,6 +81,7 @@ const Skills = () => {
   }, []);
   */
 
+  /*
   const mockExperiences = [
     {
       year: 2023,
@@ -93,6 +96,7 @@ const Skills = () => {
       works: t("experiences.2021", { returnObjects: true }) as Array<Work>,
     },
   ];
+  */
 
   return (
     <>
@@ -123,6 +127,7 @@ const Skills = () => {
             </motion.div>
           ))}
         </motion.div>
+        {/*
         <div className="app__skills-exp">
           {mockExperiences.map((experience: ExperienceType) => {
             return (
@@ -133,7 +138,7 @@ const Skills = () => {
                 <div className="app__skills-exp-year">
                   <p className="bold-text">{experience.year}</p>
                 </div>
-                {/*
+                
                 <motion.div className="app__skills-exp-works">
                   {experience.works.map((work) => (
                     <>
@@ -159,11 +164,12 @@ const Skills = () => {
                     </>
                   ))}
                 </motion.div>
-                */}
+                
               </motion.div>
             );
           })}
         </div>
+        */}
       </div>
     </>
   );
