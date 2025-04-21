@@ -229,6 +229,12 @@
     }
   },
 
+  "home-page": {
+    "view-projects": "View projects",
+    "download-cv-eng": "Download CV in english",
+    "download-cv-fr": "Download CV in french",
+    "contact-me": "Contact me"
+  },
   "experiences": {
     "2023": [
       {

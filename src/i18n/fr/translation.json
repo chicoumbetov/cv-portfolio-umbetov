@@ -83,13 +83,6 @@
   "english": "Anglais",
   "german": "Allemand",
 
-  "home": "Accueil",
-  "skills": "Compétences",
-  "experience": "Expériences",
-  "projects": "Projets",
-  "education": "Formation",
-  "contact": "Contact",
-
   "search": "Recherche",
   "link": "Lien",
   "noDocumentAvailable": "Aucun document disponible",
@@ -232,6 +225,19 @@
     }
   },
 
+  "home": "Accueil",
+  "skills": "Compétences",
+  "experience": "Expériences",
+  "projects": "Projets",
+  "education": "Formation",
+  "contact": "Contact",
+
+  "home-page": {
+    "view-projects": "Voir les projets",
+    "download-cv-eng": "Télécharger CV en anglais",
+    "download-cv-fr": "Télécharger CV en français",
+    "contact-me": "Contacter mois"
+  },
   "experiences": {
     "2023": [
       {

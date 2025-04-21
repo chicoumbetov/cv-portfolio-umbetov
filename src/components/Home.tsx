@@ -54,7 +54,7 @@ const Home = ({ darkMode }: HomeProps) => {
               href="#projects"
               role="button"
             >
-              <span>View projects</span>
+              <span>{t("home-page.view-projects")}</span>
             </a>
           </p>
 
@@ -64,7 +64,7 @@ const Home = ({ darkMode }: HomeProps) => {
               href={CV_fr}
               target="blank"
             >
-              <span>Download CV in french</span>
+              <span>{t("home-page.download-cv-fr")}</span>
             </a>
             <div className="pt-3">
               <a
@@ -72,7 +72,7 @@ const Home = ({ darkMode }: HomeProps) => {
                 href={CV_en}
                 target="blank"
               >
-                <span>Download CV in english</span>
+                <span>{t("home-page.download-cv-eng")}</span>
               </a>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Home = ({ darkMode }: HomeProps) => {
               href="#contact"
               role="button"
             >
-              <span>Contact Me</span>
+              <span>{t("home-page.contact-me")}</span>
             </a>
           </p>
         </div>
