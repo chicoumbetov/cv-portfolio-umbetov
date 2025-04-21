@@ -36,9 +36,9 @@ const BackToTop = ({ darkMode }: BackToTopProps) => {
   return (
     <a
       href="#home"
-      className={`back-to-top animated text-center justify-center align-center ${
-        darkMode ? "bg-white text-black" : "bg-black text-white"
-      } content-center text-center rounded-full shadow-lg fixed bottom-5 right-5`}
+      className={`back-to-top animated rounded-full shadow-lg fixed bottom-5 right-5
+        text-center justify-center align-center text-center content-center
+        ${darkMode ? "bg-white text-black" : "bg-black text-white"}`}
       onClick={(e) => scrollToTop(e)}
     >
       <i

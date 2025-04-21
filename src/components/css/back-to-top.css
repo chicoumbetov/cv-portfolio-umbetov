@@ -9,6 +9,8 @@
   border-radius: 50%;
   transition: background 0.5s;
   z-index: 11;
+  transform: translateX(-50%);
+  display: flex;
 }
 
 @media (max-width: 768px) {
