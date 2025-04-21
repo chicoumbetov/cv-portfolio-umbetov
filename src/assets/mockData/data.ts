@@ -123,6 +123,17 @@ import ohmyfood4 from "../img/ohmyfood/ohmyfood4.png";
 import reservia2 from "../img/reservia/reservia-hotel-mobile.png";
 import reservia1 from "../img/reservia/reservia-hotel.png";
 
+import gci1 from "../img/gci/action-reduction-dockersumdev-emissions-calculator-app-reduceghg-2022-05-03-10_24_30_page-0001.jpg";
+import gci2 from "../img/gci/company-list-dockersumdev-emissions-calculator-app-gci-ghg-inventories-2022-05-03-10_22_25_page-0001.jpg";
+import gci3 from "../img/gci/compenser-contribuer-dockersumdev-emissions-calculator-app-gci-offsetting-2022-05-03-10_24_16_page-0001.jpg";
+import gci4 from "../img/gci/database-emission-factor/database-emission-factor-1.png";
+import gci5 from "../img/gci/declaration-dockersumdev-emissions-calculator-app-gci-test-shoco-244-2022-05-03-10_21_05/declaration-dockersumdev-emissions-calculator-app-gci-test-shoco-244-2022-05-03-10_21_05-1.png";
+import gci6 from "../img/gci/each-declaration-dockersumdev-emissions-calculator-app-gci-ghg-inventories-2022-05-03-10_22_02/each-declaration-dockersumdev-emissions-calculator-app-gci-ghg-inventories-2022-05-03-10_22_02-1.png";
+import gci7 from "../img/gci/galerie-experts-dockersumdev-emissions-calculator-app-gci-experts-2022-05-03-10_24_07/galerie-experts-dockersumdev-emissions-calculator-app-gci-experts-2022-05-03-10_24_07-1.png";
+import gci8 from "../img/gci/messagerie-dockersumdev-emissions-calculator-app-messenger-2022-05-03-10_23_39/messagerie-dockersumdev-emissions-calculator-app-messenger-2022-05-03-10_23_39-1.png";
+import gci9 from "../img/gci/modify-2-company-dockersumdev-emissions-calculator-app-gci-ghg-inventories-2022-05-03-10_22_43/modify-2-company-dockersumdev-emissions-calculator-app-gci-ghg-inventories-2022-05-03-10_22_43-1.png";
+import gci10 from "../img/gci/quantification-action-reduction-dockersumdev-emissions-calculator-app-gci-ghg-inventories-edit-205-2022-05-03-10_24_46/quantification-action-reduction-dockersumdev-emissions-calculator-app-gci-ghg-inventories-edit-205-2022-05-03-10_24_46-1.png";
+
 export const sliderItems = [
   {
     id: 1,
@@ -206,11 +217,11 @@ export const categories = [
   },
   {
     id: 2022,
-    img: stock1fit1,
+    img: gci1,
     title: "Global Climate Initiative",
-    projectLink: "",
-    screenshots: [],
-    usedTechno: "React JS, Typescript, HTML5, CSS3, SASS",
+    projectLink: "http://globalclimateinitiatives.com/",
+    screenshots: [gci2, gci3, gci4, gci5, gci6, gci7, gci8, gci9, gci10],
+    usedTechno: "React JS, Redux Typescript, HTML5, CSS3, SASS",
   },
   {
     id: 1,
