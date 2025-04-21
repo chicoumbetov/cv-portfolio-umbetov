@@ -3,8 +3,8 @@
   */
 
 .about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   border-radius: 2rem;
   box-shadow: 5px 5px 5px 0 #b5b5b5 inset, -5px -5px 5px 0 #ffffff inset;
 }
