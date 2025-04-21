@@ -42,7 +42,7 @@ const BackToTop = ({ darkMode }: BackToTopProps) => {
       onClick={(e) => scrollToTop(e)}
     >
       <i
-        className={`fa fa-chevron-up text-lg text-center justify-center align-center ${
+        className={`fa fa-chevron-up text-lg text-center justify-center align-center text-center content-center ${
           darkMode ? "text-black" : "text-white"
         }`}
       ></i>
