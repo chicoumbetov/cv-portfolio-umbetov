@@ -147,7 +147,7 @@ export const Navbar = ({
 
               <li>
                 <a
-                  href="https://www.linkedin.com/in/shynggys-u/"
+                  href="https://www.linkedin.com/in/umbetov-sh/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`ico-circle border-1 rounded-full ${
