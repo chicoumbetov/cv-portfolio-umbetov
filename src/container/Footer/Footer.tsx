@@ -69,63 +69,65 @@ const Footer = () =>
       <>
         <h2 className="head-text">Take a coffee & chat with me</h2>
 
-        <div className="app__footer-cards">
-          <div className="app__footer-card ">
-            <img src={images.email} alt="email" />
-            <a href="mailto:shynggys.umbetov@gmail.com" className="p-text">
-              shynggys.umbetov@gmail.com
-            </a>
-          </div>
-          <div className="app__footer-card">
-            <img src={images.mobile} alt="phone" />
-            <a href="tel:+33(0)766198985" className="p-text">
-              +33 (0)7 66 19 89 85
-            </a>
-          </div>
-        </div>
-        {!isFormSubmitted ? (
-          <form
-            className={`app__footer-form app__flex `}
-            onSubmit={handleSubmit}
-          >
-            <div className="app__flex">
-              <input
-                type="text"
-                placeholder="Your Name"
-                name="name"
-                value={name}
-                onChange={handleChangeInput}
-                className="p-text w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
-              />
+        <div className="app__footer-container">
+          <div className="app__footer-cards">
+            <div className="app__footer-card ">
+              <img src={images.email} alt="email" />
+              <a href="mailto:shynggys.umbetov@gmail.com" className="p-text">
+                shynggys.umbetov@gmail.com
+              </a>
             </div>
-            <div className="app__flex">
-              <input
-                type="email"
-                placeholder="Your Email"
-                name="email"
-                value={email}
-                onChange={handleChangeInput}
-                className="p-text w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
-              />
+            <div className="app__footer-card">
+              <img src={images.mobile} alt="phone" />
+              <a href="tel:+33(0)766198985" className="p-text">
+                +33 (0)7 66 19 89 85
+              </a>
             </div>
+          </div>
+          {!isFormSubmitted ? (
+            <form
+              className={`app__footer-form app__flex `}
+              onSubmit={handleSubmit}
+            >
+              <div className="app__flex">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  name="name"
+                  value={name}
+                  onChange={handleChangeInput}
+                  className="p-text w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                />
+              </div>
+              <div className="app__flex">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  name="email"
+                  value={email}
+                  onChange={handleChangeInput}
+                  className="p-text w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                />
+              </div>
+              <div>
+                <textarea
+                  placeholder="Your Message"
+                  value={message}
+                  name="message"
+                  onChange={handleChangeInput}
+                  className="p-text w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                />
+              </div>
+              <button type="submit" className="p-text">
+                {!loading ? "Send Message" : "Sending..."}
+              </button>
+            </form>
+          ) : (
             <div>
-              <textarea
-                placeholder="Your Message"
-                value={message}
-                name="message"
-                onChange={handleChangeInput}
-                className="p-text w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
-              />
+              <h3 className="head-text">Thank you ! You email has been sent</h3>
             </div>
-            <button type="submit" className="p-text">
-              {!loading ? "Send Message" : "Sending..."}
-            </button>
-          </form>
-        ) : (
-          <div>
-            <h3 className="head-text">Thank you ! You email has been sent</h3>
-          </div>
-        )}
+          )}
+        </div>
       </>
     );
   };

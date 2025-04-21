@@ -1,3 +1,17 @@
+.app__footer-container {
+  width: 80%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+  .app__footer-container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 .app__footer {
   flex: 1;
   width: 100%;
@@ -16,7 +30,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 4em 2rem 2rem;
+  /*margin: 4em 2rem 2rem;*/
 }
 
 .app__footer-cards .app__footer-card {

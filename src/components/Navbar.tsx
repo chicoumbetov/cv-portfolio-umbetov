@@ -123,7 +123,7 @@ export const Navbar = ({
       } backdrop-blur-lg border-b border-white/10 shadow-lg`}
     >
       <div className="max-w-5xl mx-auto px-0">
-        <div className="flex justify-evenly mx-4 items-center h-12">
+        <div className="flex justify-between mx-4 items-center h-12">
           <div className="socials">
             <ul>
               <li>
