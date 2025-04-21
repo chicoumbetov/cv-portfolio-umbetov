@@ -131,14 +131,14 @@ export const Navbar = ({
                   href="https://github.com/chicoumbetov?tab=repositories"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`ico-circle border-1 rounded-full ${
+                  className={`ico-circle border-1 rounded-full justify-center text-center align-center ${
                     darkMode
                       ? "text-white bg-black border-white"
                       : "text-black bg-white border-black"
                   }`}
                 >
                   <FaGithub
-                    className={`rounded-full text-center ${
+                    className={`rounded-full self-center ${
                       darkMode ? "text-white bg-black" : "text-black bg-white"
                     }`}
                   />
@@ -157,7 +157,7 @@ export const Navbar = ({
                   }`}
                 >
                   <FaLinkedin
-                    className={`rounded-full text-center ${
+                    className={`rounded-full self-center ${
                       darkMode ? "text-white bg-black" : "text-black bg-white"
                     }`}
                   />
@@ -179,7 +179,7 @@ export const Navbar = ({
             id="language-select"
             value={language}
             onChange={handleLanguageChange}
-            className={`${
+            className={`rounded-full ${
               darkMode ? "bg-black text-white" : "bg-white text-black"
             }`}
           >
@@ -237,31 +237,32 @@ export const Navbar = ({
               </a>
             ))}
           </div>
-
-          {/* //* Mobile Menu Icon*/}
-          {menuOpen && (
-            <div className={`app__navbar-menu items-center justify-center`}>
-              <motion.div
-                className={`mt-12 ${
-                  darkMode ? "bg-black text-white" : "bg-white text-black"
-                }`}
-                whileInView={{ x: [300, 0] }}
-                transition={{ duration: 0.85, ease: "easeOut" }}
-              >
-                {/*<HiX onClick={() => setMenuOpen(false)} />*/}
-                <ul>
-                  {sections.map((item) => (
-                    <li key={item}>
-                      <a href={`#${item}`} onClick={() => setMenuOpen(false)}>
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            </div>
-          )}
         </div>
+        {/* //* Mobile Menu Icon*/}
+        {menuOpen && (
+          <div
+            className={`hidden app__navbar-menu items-center justify-center`}
+          >
+            <motion.div
+              className={`mt-12 ${
+                darkMode ? "bg-black text-white" : "bg-white text-black"
+              }`}
+              whileInView={{ x: [300, 0] }}
+              transition={{ duration: 0.85, ease: "easeOut" }}
+            >
+              {/*<HiX onClick={() => setMenuOpen(false)} />*/}
+              <ul>
+                {sections.map((item) => (
+                  <li key={item}>
+                    <a href={`#${item}`} onClick={() => setMenuOpen(false)}>
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+        )}
       </div>
     </nav>
   );
