@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Tooltip } from "react-tooltip";
+// import { Tooltip } from "react-tooltip";
 
 import { useTranslation } from "react-i18next";
 import { images } from "../../constants";
@@ -133,6 +133,7 @@ const Skills = () => {
                 <div className="app__skills-exp-year">
                   <p className="bold-text">{experience.year}</p>
                 </div>
+                {/*
                 <motion.div className="app__skills-exp-works">
                   {experience.works.map((work) => (
                     <>
@@ -158,6 +159,7 @@ const Skills = () => {
                     </>
                   ))}
                 </motion.div>
+                */}
               </motion.div>
             );
           })}
