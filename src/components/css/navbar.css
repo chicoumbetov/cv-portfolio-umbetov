@@ -254,6 +254,7 @@
 .socials ul {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -261,7 +262,9 @@
 }
 
 .socials ul li {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socials .ico-circle {
@@ -273,8 +276,9 @@
   margin: 0;
   transition: all 500ms ease;
 
-  align-content: center;
-  justify-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socials .ico-circle:hover {

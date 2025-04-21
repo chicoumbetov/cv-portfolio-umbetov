@@ -194,13 +194,13 @@ export const Navbar = ({
             {darkMode ? (
               <BsFillMoonStarsFill
                 onClick={() => setDarkMode(!darkMode)}
-                className={`cursor-pointer text-2xl`}
+                className={`cursor-pointer text-2xl bg-black`}
                 fill={"white"}
               />
             ) : (
               <TiAdjustBrightness
                 onClick={() => setDarkMode(!darkMode)}
-                className={`cursor-pointer text-3xl`}
+                className={`cursor-pointer text-3xl bg-white`}
                 fill="black"
               />
             )}
@@ -245,7 +245,7 @@ export const Navbar = ({
           >
             <motion.div
               className={`mt-12 ${
-                darkMode ? "bg-black text-white" : "bg-white text-black"
+                darkMode ? "text-white bg-black" : "text-black bg-white"
               }`}
               whileInView={{ x: [300, 0] }}
               transition={{ duration: 0.85, ease: "easeOut" }}
