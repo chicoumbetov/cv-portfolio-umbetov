@@ -65,7 +65,11 @@ const Projects = ({ darkMode }: ProjectsProps) => {
                         <div className="row">{/*<!--/.PORTFOLIO -->*/}</div>
                         <div className="row all_projects_container">
                           {categories.map((item) => (
-                            <CategoryItem item={item} key={item.id} />
+                            <CategoryItem
+                              item={item}
+                              key={item.id}
+                              darkMode={darkMode}
+                            />
                           ))}
                         </div>
                       </div>

@@ -1,3 +1,4 @@
+import { FaGithub } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from "styled-components";
@@ -88,9 +89,10 @@ type CategoryItemProps = {
     githubLink?: string;
     usedTechno?: string;
   };
+  darkMode?: boolean;
 };
 
-const CategoryItem = ({ item }: CategoryItemProps) => {
+const CategoryItem = ({ item, darkMode }: CategoryItemProps) => {
   return (
     <ProjectCardContainer className="col-12 col-lg-4">
       <ProjectCard>
@@ -119,23 +121,34 @@ const CategoryItem = ({ item }: CategoryItemProps) => {
             <Technologies>Technologies: {item.usedTechno}</Technologies>
           </div>
 
-          <div>
+          <div className="flex justify-between">
+            {item.githubLink && (
+              <div className="socials">
+                <a
+                  href={item.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`ico-circle border-1 rounded-full justify-center text-center align-center ${
+                    darkMode
+                      ? "text-white bg-black border-white"
+                      : "text-black bg-white border-black"
+                  }`}
+                >
+                  <FaGithub
+                    className={`rounded-full self-center ${
+                      darkMode ? "text-white bg-black" : "text-black bg-white"
+                    }`}
+                  />
+                </a>
+              </div>
+            )}
             {item.projectLink && (
               <a
                 href={item.projectLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>Project link</Button>
-              </a>
-            )}
-            {item.githubLink && (
-              <a
-                href={item.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button>Github code link</Button>
+                <Button>Live Demo</Button>
               </a>
             )}
             {item.backendLink && (
@@ -144,7 +157,7 @@ const CategoryItem = ({ item }: CategoryItemProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>Back - End link</Button>
+                <Button>Back - End</Button>
               </a>
             )}
           </div>
