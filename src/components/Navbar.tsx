@@ -131,14 +131,14 @@ export const Navbar = ({
                   href="https://github.com/chicoumbetov?tab=repositories"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`ico-circle border-1 ${
+                  className={`ico-circle border-1 rounded-full ${
                     darkMode
                       ? "text-white bg-black border-white"
                       : "text-black bg-white border-black"
                   }`}
                 >
                   <FaGithub
-                    className={`${
+                    className={`rounded-full ${
                       darkMode ? "text-white bg-black" : "text-black bg-white"
                     }`}
                   />
@@ -150,14 +150,14 @@ export const Navbar = ({
                   href="https://www.linkedin.com/in/shynggys-u/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`ico-circle border-1 ${
+                  className={`ico-circle border-1 rounded-full ${
                     darkMode
                       ? "text-white bg-black border-white"
                       : "text-black bg-white border-black"
                   }`}
                 >
                   <FaLinkedin
-                    className={` ${
+                    className={`rounded-full ${
                       darkMode ? "text-white bg-black" : "text-black bg-white"
                     }`}
                   />
