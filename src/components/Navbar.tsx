@@ -123,7 +123,7 @@ export const Navbar = ({
       } backdrop-blur-lg border-b border-white/10 shadow-lg`}
     >
       <div className="max-w-5xl mx-auto px-0">
-        <div className="flex justify-between mx-4 items-center h-12">
+        <div className="flex justify-evenly mx-4 items-center h-12">
           <div className="socials">
             <ul>
               <li>
@@ -138,7 +138,7 @@ export const Navbar = ({
                   }`}
                 >
                   <FaGithub
-                    className={`rounded-full ${
+                    className={`rounded-full text-center ${
                       darkMode ? "text-white bg-black" : "text-black bg-white"
                     }`}
                   />
@@ -157,7 +157,7 @@ export const Navbar = ({
                   }`}
                 >
                   <FaLinkedin
-                    className={`rounded-full ${
+                    className={`rounded-full text-center ${
                       darkMode ? "text-white bg-black" : "text-black bg-white"
                     }`}
                   />
@@ -239,8 +239,8 @@ export const Navbar = ({
           </div>
 
           {/* //* Mobile Menu Icon*/}
-          <div className={`app__navbar-menu items-center justify-center`}>
-            {menuOpen && (
+          {menuOpen && (
+            <div className={`app__navbar-menu items-center justify-center`}>
               <motion.div
                 className={`mt-12 ${
                   darkMode ? "bg-black text-white" : "bg-white text-black"
@@ -259,8 +259,8 @@ export const Navbar = ({
                   ))}
                 </ul>
               </motion.div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </nav>
