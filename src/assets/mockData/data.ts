@@ -163,6 +163,19 @@ export const categories = [
     id: 32025,
     img: DashboardAiInterview,
     title:
+      "Fullstack e-commerce NextJs, NestJs with CMS for multi shop management and Payment API",
+    projectLink: "",
+    screenshots: [],
+    usedTechno:
+      "Next.js, Nest.js, Google Auth React JS, Payment, Typescript, Prisma, Postgresql, MongoDB",
+    githubLink: "https://github.com/chicoumbetov/multi-ecom-nextjs-with-cms",
+    githubBack: "https://github.com/chicoumbetov/multi-ecom-nestjs-api",
+    backendLink: "https://multi-ecom-nestjs-api.onrender.com/api",
+  },
+  {
+    id: 32025,
+    img: DashboardAiInterview,
+    title:
       "Generative AI Agent for Tech Behavioral Interview with Analysis Report",
     projectLink: "https://ai-interviews-ecru.vercel.app/",
     screenshots: [
