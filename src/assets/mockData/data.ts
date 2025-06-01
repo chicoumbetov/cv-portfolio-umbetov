@@ -123,6 +123,9 @@ import ohmyfood4 from "../img/ohmyfood/ohmyfood4.png";
 import reservia2 from "../img/reservia/reservia-hotel-mobile.png";
 import reservia1 from "../img/reservia/reservia-hotel.png";
 
+// Multi ecom next nest js with cms
+import multiecom1 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs-swagger.png";
+
 import gci1 from "../img/gci/action-reduction-dockersumdev-emissions-calculator-app-reduceghg-2022-05-03-10_24_30_page-0001.jpg";
 import gci2 from "../img/gci/company-list-dockersumdev-emissions-calculator-app-gci-ghg-inventories-2022-05-03-10_22_25_page-0001.jpg";
 import gci3 from "../img/gci/compenser-contribuer-dockersumdev-emissions-calculator-app-gci-offsetting-2022-05-03-10_24_16_page-0001.jpg";
@@ -161,10 +164,10 @@ export const sliderItems = [
 export const categories = [
   {
     id: 32025,
-    img: DashboardAiInterview,
+    img: multiecom1,
     title:
       "Fullstack e-commerce NextJs, NestJs with CMS for multi shop management and Payment API",
-    projectLink: "",
+    projectLink: "https://multi-ecom-nestjs-api.onrender.com/api",
     screenshots: [],
     usedTechno:
       "Next.js, Nest.js, Google Auth React JS, Payment, Typescript, Prisma, Postgresql, MongoDB",
