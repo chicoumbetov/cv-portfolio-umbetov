@@ -9,13 +9,15 @@ export const Experience = ({ darkMode }: ExperienceProps) => {
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-10"
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <div id="experience" className=" gap-4 mt-8">
+          <div id="experience" className="">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
+              <h3 className="text-xl font-bold mb-4">
+                💼 Work Experience -around 5+ years
+              </h3>
               <div>
                 <h4 className="font-semibold">
                   Trace Software International (Group Trace) (2023 - Present)
@@ -33,6 +35,12 @@ export const Experience = ({ darkMode }: ExperienceProps) => {
                   <li>Les calculs carbones - Carbonz </li>
                   <li>Calculs solaires panneaux - Archelios</li>
                 </ul>
+                {/* // * This additional text breaks section
+                <p>
+                  Dans le secteur de l’énergie : solaire et carbone notamment;
+                  En méthodolie Agile Scrum Backlogs, Sprints (itérations de 3
+                  semaines); Une dizaine de développeurs dans l’équipe;
+                </p>*/}
 
                 <p className="font-bold">Réalisations :</p>
                 <ul>
