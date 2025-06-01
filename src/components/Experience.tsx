@@ -13,125 +13,93 @@ export const Experience = ({ darkMode }: ExperienceProps) => {
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <div
-            id="experience"
-            className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all"
-          >
-            <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-            <div className="space-y-4 text-gray-300">
+          <div id="experience" className=" gap-4 mt-8">
+            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
               <div>
                 <h4 className="font-semibold">
                   Trace Software International (Group Trace) (2023 - Present)
                 </h4>
                 <h5 className="font-bold">Developer</h5>
-                <div className="space-y-1 text-gray-200">
-                  <p>Plusieurs société & produits :</p>
-                  <ul>
-                    <li>
-                      Logiciels d'ingénierie pour les bâtiments et l'énergie -
-                      Trace Software{" "}
-                    </li>
-                    <li>
-                      Contenu numérique 3D pour l'ingénierie - TraceParts{" "}
-                    </li>
-                    <li>Gestion des objets et solutions BIM - BIM&CO </li>
-                    <li>Les calculs carbones - Carbonz </li>
-                    <li>Calculs solaires panneaux - Archelios</li>
-                  </ul>
-                  <p>
-                    Application for designing electrical and photovoltaic
-                    installations, the energy sizing of our buildings and the
-                    optimisation of an installation’s carbon footprint
-                  </p>
-                  <p>
-                    <strong>Contexte et Projet : </strong>
-                  </p>
-                  <ul>
-                    <li>
-                      Multiples projets (tels que le schéma électrique du
-                      bâtiment, les calculs de carbone, les calculs de panneaux
-                      solaires, le Building Information Modelling)
-                    </li>
-                    <li>
-                      Dans le secteur de l’énergie : solaire et carbone
-                      notamment
-                    </li>
-                    <li>
-                      En méthodolie Agile Scrum Backlogs, Sprints (itérations de
-                      3 semaines)
-                    </li>
-                    <li>Une dizaine de développeurs dans l’équipe</li>
-                  </ul>
-                  <p>
+
+                <p>Plusieurs Société & Produits :</p>
+                <ul>
+                  <li>
+                    Logiciels d'ingénierie pour les bâtiments et l'énergie -
+                    Trace Software International
+                  </li>
+                  <li>Contenu numérique 3D pour l'ingénierie - TraceParts</li>
+                  <li>Gestion des objets et solutions BIM - BIM&CO </li>
+                  <li>Les calculs carbones - Carbonz </li>
+                  <li>Calculs solaires panneaux - Archelios</li>
+                </ul>
+
+                <p className="font-bold">Réalisations :</p>
+                <ul>
+                  <li>
                     Created from scratch electrical schema builder applications.
-                  </p>
-                  <p>
+                  </li>
+                  <li>
                     Developed and maintained microservices for cloud-based
                     applications.
-                  </p>
-                  <p>Realised integration of Graph QL APIs</p>
-                  <p>
-                    <strong>Réalisations :</strong>
-                  </p>
-                  <ul>
-                    <li>
-                      Développement des nouvelles features de scratch et
-                      maintenance des applications existants dans le cadre
-                      Agile/Scrum pour de multiples projets (tels que le schéma
-                      électrique du bâtiment, les calculs de carbone, les
-                      calculs de panneaux solaires, le Building Information
-                      Modelling) écrit en Typescript, React JS (React Native,
-                      Next.js), C#, .NET, Entity Framework Core ORM, NodeJS
-                      (Nest.js), Python.
-                    </li>
-                    <li>Authentification par JSON Web Token (JWT)</li>
-                    <li>
-                      Participation et animation des différents rituels agiles
-                      (daily, sprint planning, sprints rétrospectifs etc.)
-                    </li>
-                    <li>
-                      Participation à l’architecture de l’ensemble des modules,
-                      la conception et au développement d'applications mobiles
-                      multiplateformes en utilisant React Native
-                    </li>
-                    <li>
-                      Réalisation des tests unitaires et d’intégration pour
-                      garantir la qualité et la fiabilité des applications en
-                      utilisant Vitest, Jest, Cypress
-                    </li>
-                    <li>
-                      Collaboration avec les équipes de conception, produit et
-                      SEO pour créer des interfaces utilisateur intuitives et
-                      optimisées pour les moteurs de recherche
-                    </li>
-                    <li>Création des tickets, rédigé les user stories</li>
-                    <li>
-                      Maintenir et gérer le backlog, prioriser les évolutions
-                    </li>
-                    <li>Test des fonctionnalités livrées</li>
-                    <li>
-                      Suivre les développements au quotidien (méthodes SCRUM et
-                      KANBAN) et valider les fonctionnalités livrées
-                    </li>
-                    <li>
-                      Node.js pour le développement de backends et d'APIs avec
-                      des frameworks Express.js, Nest.js
-                    </li>
-                    <li>
-                      Gestion de bases de données relationnels et non
-                      relationnels: PostgreSQL, MongoDB, Google Cloud Platform
-                      (Firebase, Gemini API, Locations API)
-                    </li>
-                    <li>
-                      Développement et maintenance des composants Design System
-                      Storybook
-                    </li>
-                    <li>
-                      Déploiement de plusieurs projets, packages après avoir
-                      configuré pipeline Azure Devops
-                    </li>
-                  </ul>
-                </div>
+                  </li>
+                  <li>Realised integration of Graph QL APIs</li>
+                  <li>
+                    Développement des nouvelles features de scratch et
+                    maintenance des applications existants dans le cadre
+                    Agile/Scrum pour de multiples projets (tels que le schéma
+                    électrique du bâtiment, les calculs de carbone, les calculs
+                    de panneaux solaires, le Building Information Modelling)
+                    écrit en Typescript, React JS (React Native, Next.js), C#,
+                    .NET, Entity Framework Core ORM, NodeJS (Nest.js), Python.
+                  </li>
+                  <li>Authentification par JSON Web Token (JWT)</li>
+                  <li>
+                    Participation et animation des différents rituels agiles
+                    (daily, sprint planning, sprints rétrospectifs etc.)
+                  </li>
+                  <li>
+                    Participation à l’architecture de l’ensemble des modules, la
+                    conception et au développement d'applications mobiles
+                    multiplateformes en utilisant React Native
+                  </li>
+                  <li>
+                    Réalisation des tests unitaires et d’intégration pour
+                    garantir la qualité et la fiabilité des applications en
+                    utilisant Vitest, Jest, Cypress
+                  </li>
+                  <li>
+                    Collaboration avec les équipes de conception, produit et SEO
+                    pour créer des interfaces utilisateur intuitives et
+                    optimisées pour les moteurs de recherche
+                  </li>
+                  <li>Création des tickets, rédigé les user stories</li>
+                  <li>
+                    Maintenir et gérer le backlog, prioriser les évolutions
+                  </li>
+                  <li>Test des fonctionnalités livrées</li>
+                  <li>
+                    Suivre les développements au quotidien (méthodes SCRUM et
+                    KANBAN) et valider les fonctionnalités livrées
+                  </li>
+                  <li>
+                    Node.js pour le développement de backends et d'APIs avec des
+                    frameworks Express.js, Nest.js
+                  </li>
+                  <li>
+                    Gestion de bases de données relationnels et non
+                    relationnels: PostgreSQL, MongoDB, Google Cloud Platform
+                    (Firebase, Gemini API, Locations API)
+                  </li>
+                  <li>
+                    Développement et maintenance des composants Design System
+                    Storybook
+                  </li>
+                  <li>
+                    Déploiement de plusieurs projets, packages après avoir
+                    configuré pipeline Azure Devops
+                  </li>
+                </ul>
               </div>
 
               <div>
@@ -145,7 +113,7 @@ export const Experience = ({ darkMode }: ExperienceProps) => {
                   développeurs. Data Management in Construction domain as
                   Autodesk/Excel Plugin
                 </p>
-                <p>Réalisations :</p>
+                <p className="font-bold">Réalisations :</p>
                 <ul>
                   <li>
                     Authentification par JSON Web Token (JWT) Développement
@@ -172,9 +140,7 @@ export const Experience = ({ darkMode }: ExperienceProps) => {
                 <h5>Développeur Fullstack</h5>
                 <p>Integration REST APIs</p>
                 <p>Carbon emission calculation and reduction</p>
-                <p>
-                  <strong>Contexte et Projet : </strong>
-                </p>
+                <p className="font-bold">Contexte et Projet :</p>
                 <p>
                   Application des calculs des émissions et réalisation du Bilan
                   GES des Entreprise B2B. Historiquement spécialiste mondial du
@@ -217,9 +183,7 @@ export const Experience = ({ darkMode }: ExperienceProps) => {
                   d’applications mobiles. En méthodologie Agile Scrum, au sein
                   d’une équipe de 2 développeurs.
                 </p>
-                <p>
-                  <strong>Réalisations : </strong>
-                </p>
+                <p className="font-bold">Réalisations :</p>
                 <ul>
                   <li>
                     Déploiement des app B2C e-commerce telles que Omedom
