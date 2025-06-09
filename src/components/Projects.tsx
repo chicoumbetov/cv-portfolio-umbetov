@@ -46,7 +46,7 @@ const Projects = ({ darkMode }: ProjectsProps) => {
                                 réalisé avec Node JS, NestJS, NextJS et C#, .Net
                                 dans la dernière expérience du travail actuel.
                                 Vous pouvez explorer le projet déployé,
-                                consulter le dépôt GitHub ou voir le backend is
+                                consulter le dépôt GitHub ou voir le backend si
                                 repo est public.
                               </p>
                               <p
