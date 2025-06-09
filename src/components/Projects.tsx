@@ -43,11 +43,20 @@ const Projects = ({ darkMode }: ProjectsProps) => {
                               >
                                 Ce portfolio est construit avec React.js,
                                 TypeScript, SASS et Bootstrap. Le backend est
-                                réalisé avec Node JS, NestJS, NextJS et C#, .Net
-                                dans la dernière expérience du travail actuel.
-                                Vous pouvez explorer le projet déployé,
-                                consulter le dépôt GitHub ou voir le backend si
-                                repo est public.
+                                réalisé avec Node JS, NestJS, NextJS (et C#,
+                                .Net dans la dernière expérience du travail
+                                actuel).
+                              </p>
+                              <p
+                                className={`font-bold ${
+                                  darkMode ? "text-black" : "text-white}"
+                                }`}
+                              >
+                                Bien que montré backend est plus compliqué à
+                                montré visuelement, que front, ils y sont les
+                                deux dans ce portfolio. Vous pouvez explorer le
+                                projet déployé, consulter le dépôt GitHub ou
+                                voir le backend si repo est public.
                               </p>
                               <p
                                 className={`line-mf ${
