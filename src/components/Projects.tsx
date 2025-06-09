@@ -41,10 +41,13 @@ const Projects = ({ darkMode }: ProjectsProps) => {
                                   darkMode ? "text-black" : "text-white}"
                                 }`}
                               >
-                                This portfolio is built with React.js,
-                                TypeScript, SASS, and Bootstrap. You can explore
-                                the deployed project, check the GitHub
-                                repository, or view the backend.
+                                Ce portfolio est construit avec React.js,
+                                TypeScript, SASS et Bootstrap. Le backend est
+                                réalisé avec Node JS, NestJS, NextJS et C#, .Net
+                                dans la dernière expérience du travail actuel.
+                                Vous pouvez explorer le projet déployé,
+                                consulter le dépôt GitHub ou voir le backend is
+                                repo est public.
                               </p>
                               <p
                                 className={`line-mf ${

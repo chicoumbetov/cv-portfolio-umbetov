@@ -125,6 +125,9 @@ import reservia1 from "../img/reservia/reservia-hotel.png";
 
 // Multi ecom next nest js with cms
 import multiecom1 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs-swagger.png";
+// import multiecom2 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs-swagger.png";
+// import multiecom3 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs-swagger.png";
+// import multiecom4 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs-swagger.png";
 
 import gci1 from "../img/gci/action-reduction-dockersumdev-emissions-calculator-app-reduceghg-2022-05-03-10_24_30_page-0001.jpg";
 import gci2 from "../img/gci/company-list-dockersumdev-emissions-calculator-app-gci-ghg-inventories-2022-05-03-10_22_25_page-0001.jpg";
@@ -167,10 +170,10 @@ export const categories = [
     img: multiecom1,
     title:
       "Fullstack e-commerce NextJs, NestJs with CMS for multi shop management and Payment API",
-    projectLink: "https://multi-ecom-nestjs-api.onrender.com/api",
+    projectLink: "https://multi-ecom-nextjs-with-cms.netlify.app/",
     screenshots: [],
     usedTechno:
-      "Next.js, Nest.js, Google Auth React JS, Payment, Typescript, Prisma, Postgresql, MongoDB",
+      "Next JS, React JS, Node JS, Nest JS, Google Auth, GCP, Payment, Typescript, Prisma, Postgresql, MongoDB",
     githubLink: "https://github.com/chicoumbetov/multi-ecom-nextjs-with-cms",
     githubBack: "https://github.com/chicoumbetov/multi-ecom-nestjs-api",
     backendLink: "https://multi-ecom-nestjs-api.onrender.com/api",
