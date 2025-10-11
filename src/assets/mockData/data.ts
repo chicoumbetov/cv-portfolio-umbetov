@@ -124,10 +124,13 @@ import reservia2 from "../img/reservia/reservia-hotel-mobile.png";
 import reservia1 from "../img/reservia/reservia-hotel.png";
 
 // Multi ecom next nest js with cms
+import multiecom4 from "../img/multi-ecom-next-nestjs-with-cms/design/explorer.png";
+import multiecom2 from "../img/multi-ecom-next-nestjs-with-cms/design/store-dashboard.png";
+import multiecom3 from "../img/multi-ecom-next-nestjs-with-cms/design/store-settings.png";
 import multiecom1 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs-swagger.png";
-// import multiecom2 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs-swagger.png";
-// import multiecom3 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs-swagger.png";
-// import multiecom4 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs-swagger.png";
+
+import ml_fintech_app from "../img/ml-fintech/ml-fin-app-1.png";
+import ml_fintech_app_2 from "../img/ml-fintech/ml-fin-app-2.png";
 
 import gci1 from "../img/gci/action-reduction-dockersumdev-emissions-calculator-app-reduceghg-2022-05-03-10_24_30_page-0001.jpg";
 import gci2 from "../img/gci/company-list-dockersumdev-emissions-calculator-app-gci-ghg-inventories-2022-05-03-10_22_25_page-0001.jpg";
@@ -166,12 +169,25 @@ export const sliderItems = [
 
 export const categories = [
   {
-    id: 32025,
+    id: 92025,
+    img: ml_fintech_app,
+    title:
+      "Fullstack Machine Learning Fintech application",
+    projectLink: "https://ml-fin-app-ve9n.vercel.app/",
+    screenshots: [ml_fintech_app_2],
+    usedTechno:
+      "Machine Learning Regression JS, Next JS, React JS, Node JS, Nest JS, Typescript",
+    githubLink: "https://github.com/chicoumbetov/ml-fin-app",
+    githubBack: "https://github.com/chicoumbetov/ml-fin-app/tree/main/server",
+    // backendLink: "",
+  },
+  {
+    id: 32026,
     img: multiecom1,
     title:
       "Fullstack e-commerce NextJs, NestJs with CMS for multi shop management and Payment API",
     projectLink: "https://multi-ecom-nextjs-with-cms.netlify.app/",
-    screenshots: [],
+    screenshots: [multiecom2, multiecom3, multiecom4],
     usedTechno:
       "Next JS, React JS, Node JS, Nest JS, Google Auth, GCP, Payment, Typescript, Prisma, Postgresql, MongoDB",
     githubLink: "https://github.com/chicoumbetov/multi-ecom-nextjs-with-cms",
