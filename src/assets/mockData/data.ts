@@ -132,6 +132,12 @@ import multiecom1 from "../img/multi-ecom-next-nestjs-with-cms/multi-ecom-nestjs
 import ml_fintech_app from "../img/ml-fintech/ml-fin-app-1.png";
 import ml_fintech_app_2 from "../img/ml-fintech/ml-fin-app-2.png";
 
+import therapy_1 from "../img/ai-therapy/therapy-1.1.png";
+import therapy_2 from "../img/ai-therapy/therapy-1.2.png";
+import therapy_3 from "../img/ai-therapy/therapy-3.png";
+import therapy_4 from "../img/ai-therapy/therapy-features.png";
+import therapy_5 from "../img/ai-therapy/therapy-forgot-password.png";
+
 import gci1 from "../img/gci/action-reduction-dockersumdev-emissions-calculator-app-reduceghg-2022-05-03-10_24_30_page-0001.jpg";
 import gci2 from "../img/gci/company-list-dockersumdev-emissions-calculator-app-gci-ghg-inventories-2022-05-03-10_22_25_page-0001.jpg";
 import gci3 from "../img/gci/compenser-contribuer-dockersumdev-emissions-calculator-app-gci-offsetting-2022-05-03-10_24_16_page-0001.jpg";
@@ -168,6 +174,19 @@ export const sliderItems = [
 ];
 
 export const categories = [
+  {
+    id: 9-1-2025,
+    img: therapy_1,
+    title:
+      "Fullstack AI Therapist applicaiton",
+    projectLink: "https://ai-therapist-shoco.vercel.app/dashboard",
+    screenshots: [therapy_2, therapy_3, therapy_4, therapy_5],
+    usedTechno:
+      "Typescript JS, Next JS, React JS, Node JS, Nest JS, Typescript MongoDB",
+    githubLink: "https://github.com/chicoumbetov/ai-therapist",
+    githubBack: "",
+    // backendLink: "",
+  },
   {
     id: 92025,
     img: ml_fintech_app,
