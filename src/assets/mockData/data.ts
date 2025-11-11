@@ -205,7 +205,7 @@ export const categories = [
     img: multiecom1,
     title:
       "Fullstack e-commerce NextJs, NestJs with CMS for multi shop management and Payment API",
-    projectLink: "https://multi-ecom-nextjs-with-cms.netlify.app/",
+    projectLink: "https://multi-ecom-nextjs-with-cms-ubzi.vercel.app/",
     screenshots: [multiecom2, multiecom3, multiecom4],
     usedTechno:
       "Next JS, React JS, Node JS, Nest JS, Google Auth, GCP, Payment, Typescript, Prisma, Postgresql, MongoDB",

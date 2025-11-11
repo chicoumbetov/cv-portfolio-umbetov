@@ -87,6 +87,7 @@ type CategoryItemProps = {
     backendLink?: string;
     screenshots: (string | undefined)[];
     githubLink?: string;
+    githubBack?: string
     usedTechno?: string;
   };
   darkMode?: boolean;
@@ -159,6 +160,26 @@ const CategoryItem = ({ item, darkMode }: CategoryItemProps) => {
               >
                 <Button>Back - End Live</Button>
               </a>
+            )}
+            {item.githubBack && (
+              <div className="socials">
+                <a
+                  href={item.githubBack}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`ico-circle border-1 rounded-full justify-center text-center align-center ${
+                    darkMode
+                      ? "text-white bg-black border-white"
+                      : "text-black bg-white border-black"
+                  }`}
+                >
+                  <FaGithub
+                    className={`rounded-full self-center ${
+                      darkMode ? "text-white bg-black" : "text-black bg-white"
+                    }`}
+                  />
+                </a>
+              </div>
             )}
           </div>
         </ProjectCardInformation>
