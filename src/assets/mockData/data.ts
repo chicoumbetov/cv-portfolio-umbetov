@@ -15,10 +15,6 @@ import ProfileKaravan from "../img/karavanImmiGuide/Profile.png";
 import SearchResultKaravan from "../img/karavanImmiGuide/SearchResult.png";
 
 // * tsi
-import tsi1 from "../img/tsi/1.png";
-import tsi2 from "../img/tsi/2.png";
-import tsi3 from "../img/tsi/3.png";
-import tsi4 from "../img/tsi/4.png";
 
 // * bim
 import bim1 from "../img/bim/1.png";
@@ -249,13 +245,13 @@ export const categories = [
   },
   {
     id: 20232025,
-    img: tsi1,
+    img: '',
     title: "Trace Software International (Group Trace)",
     description:
       "Application for designing electrical and photovoltaic installations, the energy sizing of our buildings and the optimisation of an installation’s carbon footprint",
     projectLink:
       "https://www.youtube.com/watch?v=V-qxT9WT2PU&list=PLJELWlAY3-461qj5JkRLgsjnahPXDrSi9",
-    screenshots: [tsi2, tsi3, tsi4],
+    screenshots: [],
     usedTechno:
       "React JS, Typescript, C#, .Net8, hot chocolate, MongoDB, Storybook Design System",
   },
