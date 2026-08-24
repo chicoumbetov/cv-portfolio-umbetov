@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { categories } from "../assets/mockData/data";
 import { AppWrap, MotionWrap } from "../wrapper";
 import CategoryItem from "./CategoryItem";
@@ -8,6 +9,8 @@ type ProjectsProps = {
 };
 
 const Projects = ({ darkMode }: ProjectsProps) => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="about-mf sect-pt4 route">
@@ -31,50 +34,47 @@ const Projects = ({ darkMode }: ProjectsProps) => {
                             <div className="title-box text-center">
                               <h4
                                 className={`text-4xl font-bold uppercase ${
-                                  darkMode ? "text-black" : "text-white}"
+                                  darkMode ? "text-black" : "text-white"
                                 }`}
                               >
-                                Projects
+                                {t("projects.title", "Projects")}
                               </h4>
                               <p
                                 className={`${
-                                  darkMode ? "text-black" : "text-white}"
+                                  darkMode ? "text-black" : "text-white"
                                 }`}
                               >
-                                Ce portfolio est construit avec React.js,
-                                TypeScript, SASS et Bootstrap. Le backend est
-                                réalisé avec Node JS, NestJS, NextJS (et C#,
-                                .Net dans la dernière expérience du travail
-                                actuel).
+                                {t(
+                                  "projects.subtitle",
+                                  "Ce portfolio est construit avec React.js, TypeScript, SASS et Bootstrap. Le backend est réalisé avec Node JS, NestJS, NextJS (et C#, .Net dans la dernière expérience du travail actuel)."
+                                )}
                               </p>
                               <p
                                 className={`font-bold ${
-                                  darkMode ? "text-black" : "text-white}"
+                                  darkMode ? "text-black" : "text-white"
                                 }`}
                               >
-                                Bien que montré backend est plus compliqué à
-                                montré visuelement, que front, ils y sont les
-                                deux dans ce portfolio. Vous pouvez explorer le
-                                projet déployé, consulter le dépôt GitHub ou
-                                voir le backend si repo est public.
+                                {t(
+                                  "projects.backendNote",
+                                  "Bien que montré backend est plus compliqué à montrer visuellement que front, ils y sont les deux dans ce portfolio..."
+                                )}
                               </p>
                               <p
                                 className={`line-mf ${
-                                  darkMode ? "text-black" : "text-white}"
+                                  darkMode ? "text-black" : "text-white"
                                 }`}
                               >
-                                Click on an image to see more screenshots, or
-                                use the project link to visit it directly.
+                                {t(
+                                  "projects.clickInstruction",
+                                  "Click on an image to see more screenshots, or use the project link to visit it directly."
+                                )}
                               </p>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      {/* <!--PORTFOLIO IMAGE-->*/}
-
                       <div className="container">
-                        <div className="row">{/*<!--/.PORTFOLIO -->*/}</div>
                         <div className="row all_projects_container">
                           {categories.map((item) => (
                             <CategoryItem

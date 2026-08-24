@@ -228,10 +228,25 @@
   "home": "Accueil",
   "skills": "Compétences",
   "experience": "Expériences",
-  "projects": "Projets",
+  "projects": {
+    "title": "Projects",
+    "subtitle": "This portfolio is built with React.js, TypeScript, SASS, and Bootstrap. The backend is powered by Node.js, NestJS, Next.js, and C# (.NET).",
+    "backendNote": "Both frontend and backend code are integrated. Explore live deployments, GitHub repositories, or backend APIs.",
+    "clickInstruction": "Click on an image to see more screenshots, or use the project link to visit it directly.",
+    "liveDemo": "Live Demo",
+    "backendLive": "Back - End Live",
+    "technologies": "Technologies"
+  },
   "education": "Formation",
   "contact": "Contact",
-
+  "nav": {
+    "home": "Acceuil",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projets",
+    "education": "Education",
+    "contact": "Contact"
+  },
   "home-page": {
     "view-projects": "Voir les projets",
     "download-cv-eng": "Télécharger CV en anglais",

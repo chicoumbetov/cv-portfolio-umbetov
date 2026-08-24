@@ -1,34 +1,26 @@
-// import carousel from "../img/carousel/screencapture-localhost-3000-2021-01-06-23_01_05.png";
-
-// * Gen AI interview Agent
+// Enhanced Mock Data with AI Engineering Competencies and Enterprise Scale
 import AiInterview from "../img/gen-ai-interview/ai-interviews.png";
 import CallAiInterview from "../img/gen-ai-interview/call-ai-interviews.png";
 import DashboardAiInterview from "../img/gen-ai-interview/Dashboard.png";
 import FeedbackAiInterview from "../img/gen-ai-interview/feedback-ai-interviews.png";
 import ConfirmationAiInterview from "../img/gen-ai-interview/InterviewConfirmation.png";
 
-// karavan ImmiGuide
 import HomeKaravan from "../img/karavanImmiGuide/Home.png";
 import ApiKaravan from "../img/karavanImmiGuide/KaravanApi.png";
 import LoginKaravan from "../img/karavanImmiGuide/Login.png";
 import ProfileKaravan from "../img/karavanImmiGuide/Profile.png";
 import SearchResultKaravan from "../img/karavanImmiGuide/SearchResult.png";
 
-// * tsi
-
-// * bim
 import bim1 from "../img/bim/1.png";
 import bim2 from "../img/bim/2.png";
 import bim3 from "../img/bim/3.png";
 import bim4 from "../img/bim/4.png";
 import bim5 from "../img/bim/5.png";
 
-// 1fit.app
 import stock1fit1 from "../img/1fitApp/1fit.app.png";
 import stock1fit2 from "../img/1fitApp/1fit.app2.png";
 import stock1fit3 from "../img/1fitApp/1fit.app3.png";
 
-// omedom
 import omedom3bankAcc from "../img/omedom/bank-account-connection.png";
 import omedom4budgetOption from "../img/omedom/budget-options-page.png";
 import omedom6Budget from "../img/omedom/budget-page.png";
@@ -41,13 +33,10 @@ import omedom10Mouv from "../img/omedom/mouvement-page.png";
 import omedom11Mouv from "../img/omedom/parameter-doc-generation.png";
 import omedom12RecapWater from "../img/omedom/recap-water.png";
 import omedom2treso from "../img/omedom/tresory-page.png";
-// import omedom13quittanceDownloadPage from "../img/omedom/quittance-download-page.png";
 
-// scanflock
 import scanflock2 from "../img/scanflock/scanflock-mon-cabinet.png";
 import scanflock3 from "../img/scanflock/scanflock-telecons.png";
 
-// klubnest
 import klubScreenShot2 from "../img/klubnest/concept-klubnest.png";
 import klubScreenShot1 from "../img/klubnest/homepage-klubnest.png";
 import klubScreenShot4 from "../img/klubnest/presentation_klub.png";
@@ -55,18 +44,14 @@ import klubScreenShot5 from "../img/klubnest/Profil-membre.png";
 import klubScreenShot6 from "../img/klubnest/Rejoignez-nous.png";
 import klubScreenShot3 from "../img/klubnest/tous-klub.png";
 
-// Minsk
 import minsk3 from "../img/minsk/5sformat.png";
 import minsk1 from "../img/minsk/mainpage.png";
 import minsk2 from "../img/minsk/page.png";
 import minsk4 from "../img/minsk/shoepage.png";
 import {
   default as minsk5,
-  default as minsk6,
-  default as minsk7,
 } from "../img/simple-project.png";
 
-// yolla
 import yolla1 from "../img/yolla/About Us.png";
 import yolla2 from "../img/yolla/Bank Details.png";
 import yolla3 from "../img/yolla/Billing information.png";
@@ -79,12 +64,10 @@ import yolla9 from "../img/yolla/Notification settings.png";
 import yolla10 from "../img/yolla/User Confirm Details.png";
 import yolla11 from "../img/yolla/User Dashboard - Request history.png";
 
-// wedding organiser`
 import wedding3 from "../img/wedding/wedding-sign-in.png";
 import wedding2 from "../img/wedding/wedding-signUP.png";
 import wedding1 from "../img/wedding/wedding1.png";
 
-// Pure javascript
 import pureJs2 from "../img/pure-javascript/Screenshot 2022-01-09 at 19.44.46.png";
 import pureJs3 from "../img/pure-javascript/Screenshot 2022-01-09 at 19.45.04.png";
 import pureJs4 from "../img/pure-javascript/Screenshot 2022-01-09 at 19.45.53.png";
@@ -100,26 +83,21 @@ import pureJs11 from "../img/pure-javascript/Screenshot 2022-01-09 at 19.47.45.p
 import pureJs12 from "../img/pure-javascript/Screenshot 2022-01-09 at 19.48.33.png";
 import pureJs1 from "../img/pure-javascript/Screenshot 2022-01-09 at 19.50.09.png";
 
-// React Quiz
 import reactQuiz from "../img/react-quiz.png";
 import reactQuiz2 from "../img/react-quiz2.png";
 
-// Kanape selling
 import kanap1 from "../img/kanape/kanap1.png";
 import kanap2 from "../img/kanape/kanap2.png";
 import kanap3 from "../img/kanape/kanap3.png";
 
-// Oh my food
 import ohmyfood2 from "../img/ohmyfood/ohmyfood-mobile.png";
 import ohmyfood1 from "../img/ohmyfood/ohmyfood.png";
 import ohmyfood3 from "../img/ohmyfood/ohmyfood3.png";
 import ohmyfood4 from "../img/ohmyfood/ohmyfood4.png";
 
-// Reservia
 import reservia2 from "../img/reservia/reservia-hotel-mobile.png";
 import reservia1 from "../img/reservia/reservia-hotel.png";
 
-// Multi ecom next nest js with cms
 import multiecom4 from "../img/multi-ecom-next-nestjs-with-cms/design/explorer.png";
 import multiecom2 from "../img/multi-ecom-next-nestjs-with-cms/design/store-dashboard.png";
 import multiecom3 from "../img/multi-ecom-next-nestjs-with-cms/design/store-settings.png";
@@ -171,40 +149,35 @@ export const sliderItems = [
 
 export const categories = [
   {
-    id: 9-1-2025,
+    id: 912025,
     img: therapy_1,
-    title:
-      "Fullstack AI Therapist applicaiton",
+    title: "Fullstack AI Therapist application",
+    description: "AI-powered psychological guidance platform featuring RAG memory, emotional state tracking, and real-time chat evaluation.",
     projectLink: "https://ai-therapist-shoco.vercel.app/dashboard",
     screenshots: [therapy_2, therapy_3, therapy_4, therapy_5],
-    usedTechno:
-      "Typescript JS, Next JS, React JS, Node JS, Nest JS, Typescript MongoDB",
+    usedTechno: "TypeScript, Next.js, React, Node.js, NestJS, MongoDB, LLM APIs",
     githubLink: "https://github.com/chicoumbetov/ai-therapist",
     githubBack: "",
-    // backendLink: "",
   },
   {
     id: 92025,
     img: ml_fintech_app,
-    title:
-      "Fullstack Machine Learning Fintech application",
+    title: "Fullstack Machine Learning Fintech application",
+    description: "Predictive financial analysis system with regression models for market risk scoring and automated transaction assessment.",
     projectLink: "https://ml-fin-app-ve9n.vercel.app/",
     screenshots: [ml_fintech_app_2],
-    usedTechno:
-      "Machine Learning Regression JS, Next JS, React JS, Node JS, Nest JS, Typescript",
+    usedTechno: "Python, Machine Learning Regression, Next.js, React, Node.js, NestJS, TypeScript",
     githubLink: "https://github.com/chicoumbetov/ml-fin-app",
     githubBack: "https://github.com/chicoumbetov/ml-fin-app/tree/main/server",
-    // backendLink: "",
   },
   {
     id: 32026,
     img: multiecom1,
-    title:
-      "Fullstack e-commerce NextJs, NestJs with CMS for multi shop management and Payment API",
+    title: "Fullstack E-commerce Next.js / NestJS with CMS & Payment API",
+    description: "Multi-shop e-commerce management platform with headless CMS, secure Stripe payments, and modular microservices backend.",
     projectLink: "https://multi-ecom-nextjs-with-cms-ubzi.vercel.app/",
     screenshots: [multiecom2, multiecom3, multiecom4],
-    usedTechno:
-      "Next JS, React JS, Node JS, Nest JS, Google Auth, GCP, Payment, Typescript, Prisma, Postgresql, MongoDB",
+    usedTechno: "Next.js, NestJS, Google Auth, GCP, Stripe API, TypeScript, Prisma, PostgreSQL, MongoDB",
     githubLink: "https://github.com/chicoumbetov/multi-ecom-nextjs-with-cms",
     githubBack: "https://github.com/chicoumbetov/multi-ecom-nestjs-api",
     backendLink: "https://multi-ecom-nestjs-api.onrender.com/api",
@@ -212,8 +185,8 @@ export const categories = [
   {
     id: 32025,
     img: DashboardAiInterview,
-    title:
-      "Generative AI Agent for Tech Behavioral Interview with Analysis Report",
+    title: "Generative AI Agent for Tech Behavioral Interviews",
+    description: "Voice-driven AI interviewer using LangGraph and Gemini for automated candidate assessment, RAG evaluation, and instant reporting.",
     projectLink: "https://ai-interviews-ecru.vercel.app/",
     screenshots: [
       DashboardAiInterview,
@@ -222,15 +195,13 @@ export const categories = [
       CallAiInterview,
       FeedbackAiInterview,
     ],
-    usedTechno:
-      "React JS, Typescript, Vapi, Gemini, Google AI Studio, Firebase",
+    usedTechno: "React, TypeScript, Vapi, Gemini, Google AI Studio, LangGraph, Firebase",
   },
   {
     id: 2024,
     img: HomeKaravan,
-    title: "Karavan (ex ImmiGuide)",
-    description:
-      "crossplatform application for P2P logistics management (Web/iOS/Android/ Telegram Mini Apps Stores)",
+    title: "Karavan App (ex ImmiGuide)",
+    description: "P2P logistics platform connecting travelers and senders with real-time tracking, messaging microservices, and AI-assisted routing.",
     projectLink: "https://immi-guide.app/",
     screenshots: [
       ApiKaravan,
@@ -240,51 +211,49 @@ export const categories = [
       SearchResultKaravan,
     ],
     backendLink: "https://immi-guide-api-tdtp.onrender.com/api-docs/",
-    usedTechno:
-      "NodeJS, React Native, RabbitMQ, Microservices, MongoDB, NodeEmail Express,",
+    usedTechno: "Node.js, React Native, RabbitMQ, Microservices, MongoDB, Docker, Express",
   },
   {
     id: 20232025,
     img: '',
-    title: "Trace Software International (Group Trace)",
-    description:
-      "Application for designing electrical and photovoltaic installations, the energy sizing of our buildings and the optimisation of an installation’s carbon footprint",
-    projectLink:
-      "https://www.youtube.com/watch?v=V-qxT9WT2PU&list=PLJELWlAY3-461qj5JkRLgsjnahPXDrSi9",
+    title: "Trace Software International (Group Trace) - AI & Fullstack",
+    description: "Engineering software for carbon footprint optimization, photovoltaic calculations, and electrical schematics. Implemented agentic AI workflows, Claude Code code generation, and C#/.NET microservices.",
+    projectLink: "https://www.youtube.com/watch?v=V-qxT9WT2PU&list=PLJELWlAY3-461qj5JkRLgsjnahPXDrSi9",
     screenshots: [],
-    usedTechno:
-      "React JS, Typescript, C#, .Net8, hot chocolate, MongoDB, Storybook Design System",
+    usedTechno: "TypeScript, React, C#, .NET 8, Python, LangGraph, Claude Code, MongoDB, PostgreSQL, Storybook",
   },
   {
     id: 20222023,
     img: bim1,
     title: "BIM&CO (Group Trace)",
-    description:
-      "Data Management in Construction domain as Autodesk/Excel Plugin",
+    description: "Advanced BIM construction data management platform and CAD plugins (Revit, AutoCAD, Excel). Refactored legacy architecture into modern modular micro-frontends with 20% performance boost.",
     projectLink: "https://www.youtube.com/watch?v=tJyaJxvaaNs",
     screenshots: [bim2, bim3, bim4, bim5],
-    usedTechno: "React JS, Typescript, Redux Saga, Storybook Design System",
+    usedTechno: "React, TypeScript, Redux Saga, Storybook, Azure DevOps",
   },
   {
     id: 2022,
     img: gci1,
-    title: "Global Climate Initiative",
+    title: "Global Climate Initiatives (Tk'blue)",
+    description: "Carbon emission tracking and GHG inventory calculation software for B2B enterprises to measure and offset supply chain carbon footprints.",
     projectLink: "http://globalclimateinitiatives.com/",
     screenshots: [gci2, gci3, gci4, gci5, gci6, gci7, gci8, gci9, gci10],
-    usedTechno: "React JS, Redux Typescript, HTML5, CSS3, SASS",
+    usedTechno: "React, Redux, TypeScript, Node.js, SASS, Docker",
   },
   {
     id: 1,
     img: stock1fit1,
     title: "1fit.app",
+    description: "Unified multisport fitness subscription platform enabling seamless studio bookings and membership management across mobile and web.",
     projectLink: "https://1fit.app",
     screenshots: [stock1fit2, stock1fit3],
-    usedTechno: "React JS, Typescript, HTML5, CSS3, SASS",
+    usedTechno: "React, TypeScript, Redux, Node.js, SASS",
   },
   {
     id: 2,
     img: omedom1,
     title: "Omedom",
+    description: "B2C real estate portfolio and mortgage management application featuring banking API integrations and automated document generation.",
     projectLink: "https://app.omedom.com",
     githubLink: "https://github.com/chicoumbetov/ui_app",
     screenshots: [
@@ -300,23 +269,22 @@ export const categories = [
       omedom11Mouv,
       omedom12RecapWater,
     ],
-    usedTechno:
-      "React Native, Typescript, AWS cloud services: AppSync, Cognito, Dynamo DB",
+    usedTechno: "React Native, TypeScript, AWS AppSync, AWS Cognito, DynamoDB",
   },
   {
     id: 3,
     img: scanflock2,
-    title: "Scanflock done, deployment in process",
-    // projectLink: "",
+    title: "Scanflock",
+    description: "Telemedicine and veterinary practice management mobile application with real-time video consultations and secure health records.",
     githubLink: "https://github.com/chicoumbetov/vetani_app",
     screenshots: [scanflock3],
-    usedTechno:
-      "React Native, Typescript, AWS cloud services: AppSync, Cognito, Dynamo DB",
+    usedTechno: "React Native, TypeScript, AWS AppSync, WebRTC, DynamoDB",
   },
   {
     id: 4,
     img: klubScreenShot1,
     title: "Klubnest",
+    description: "Community and venue networking platform with interactive directory mapping and automated event coordination.",
     projectLink: "https://dev.klubnest.fr/",
     screenshots: [
       klubScreenShot1,
@@ -326,115 +294,97 @@ export const categories = [
       klubScreenShot5,
       klubScreenShot6,
     ],
-    usedTechno:
-      "Javascript, PHP, MySQL, HTML5, CSS3, SASS, Bootstrap, LightSlier, Google maps API",
+    usedTechno: "JavaScript, PHP, MySQL, Bootstrap, Google Maps API",
   },
   {
     id: 20192021,
     img: pureJs2,
-    title: "Lydall - Thermo acoustical materials",
-    projectLink: "",
-    githubLink: "",
-    screenshots: [],
+    title: "Lydall - Thermo Acoustical Materials",
+    description: "Industrial simulation and measurement data analytics tools for automotive acoustic insulation systems.",
+    usedTechno: "JavaScript, Python, Data Analytics, HTML5, CSS3",
   },
   {
     id: 5,
     img: wedding2,
-    title: "Wedding organizer",
+    title: "Wedding Organizer SaaS",
+    description: "Collaborative event planning and guest management platform with real-time task boards and budgetary tracking.",
     projectLink: "https://wedding-organize.netlify.app/",
     githubLink: "https://github.com/chicoumbetov/wedding-organize",
     backendLink: "https://wedding-react-js.herokuapp.com/posts",
-    usedTechno: "React, Redux, Express JS, Node JS, MongoDB, HTML5, CSS3",
+    usedTechno: "React, Redux, Express.js, Node.js, MongoDB",
     screenshots: [wedding1, wedding3],
   },
   {
     id: 6,
     img: kanap1,
-    title: "E - commerce kanapé selling",
+    title: "E-commerce Kanap",
+    description: "Full-stack furniture e-commerce storefront with cart management, local storage persistence, and REST API integration.",
     projectLink: "https://chicoumbetov.github.io/kanap-node-js/",
     githubLink: "https://github.com/chicoumbetov/kanap-node-js",
     backendLink: "https://kanap-project.herokuapp.com/api/products",
-    usedTechno: "Javascript, Express JS, Node JS, Mongo DB, HTML5, CSS3",
+    usedTechno: "JavaScript, Express.js, Node.js, MongoDB",
     screenshots: [kanap2, kanap3],
   },
   {
     id: 7,
     img: yolla7homepage,
-    title: "yolla services, Kuala - Lumpur, Indonesia",
-    projectLink: "",
+    title: "Yolla Services Directory",
+    description: "Vendor directory and billing management platform designed for corporate service procurement in Southeast Asia.",
     githubLink: "https://github.com/aiya94/yolla-app",
-    usedTechno: "React, Redux, Golang",
+    usedTechno: "React, Redux, Golang, PostgreSQL",
     screenshots: [
-      yolla1,
-      yolla2,
-      yolla3,
-      yolla4,
-      yolla5,
-      yolla6,
-      yolla8,
-      yolla9,
-      yolla10,
-      yolla11,
+      yolla1, yolla2, yolla3, yolla4, yolla5,
+      yolla6, yolla8, yolla9, yolla10, yolla11,
     ],
   },
   {
     id: 8,
     img: minsk1,
-    title: "Belorussian e-commerce shop",
+    title: "Minsk E-commerce Store",
+    description: "Modern retail product catalog with responsive UI design and dynamic filtering features.",
     projectLink: "https://chicoumbetov.github.io/minsk",
-    screenshots: [minsk2, minsk3, minsk4, minsk5, minsk6, minsk7],
-    usedTechno: "React js, HTML5, CSS3",
+    screenshots: [minsk2, minsk3, minsk4, minsk5],
+    usedTechno: "React, HTML5, CSS3",
   },
-
   {
     id: 10,
     img: pureJs2,
-    title: "Pure javascript mini projects collection",
+    title: "Pure JavaScript Mini Projects",
+    description: "Collection of interactive web utilities, widgets, and algorithmic dashboard components.",
     projectLink: "https://chicoumbetov.github.io/vladilen-gallery/",
     githubLink: "https://github.com/chicoumbetov/vladilen-gallery",
     screenshots: [
-      pureJs1,
-      pureJs3,
-      pureJs4,
-      pureJs5,
-      pureJs6,
-      pureJs7,
-      pureJs8,
-      pureJs9,
-      pureJs10,
-      pureJs11,
-      pureJs12,
+      pureJs1, pureJs3, pureJs4, pureJs5, pureJs6,
+      pureJs7, pureJs8, pureJs9, pureJs10, pureJs11, pureJs12,
     ],
+    usedTechno: "Vanilla JavaScript, HTML5, CSS3",
   },
-  /*
-  {
-    id: 11,
-    img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    title: "Buyers jungle in process",
-    // projectLink: "",
-    screenshots: [],
-  },
-  */
   {
     id: 12,
     img: ohmyfood1,
-    title: "Oh my food restaurant",
+    title: "OhMyFood",
+    description: "Mobile-first restaurant menu ordering and animation showcase built with advanced CSS keyframes.",
     projectLink: "https://github.com/chicoumbetov/umbetov_shynggys_3_04072021",
     screenshots: [ohmyfood2, ohmyfood3, ohmyfood4],
+    usedTechno: "HTML5, SASS, CSS Animations",
   },
   {
     id: 13,
     img: reactQuiz,
-    title: "Typescript Quiz app. Fetch data from opentdb.com(Trivia database)",
+    title: "TypeScript Quiz App",
+    description: "Interactive trivia application fetching dynamic questions from OpenTDB with strict type safety and score tracking.",
     projectLink: "https://chicoumbetov.github.io/react-typescript-quiz",
     screenshots: [reactQuiz2],
+    usedTechno: "React, TypeScript, OpenTDB API, CSS",
   },
   {
     id: 14,
     img: reservia1,
-    title: "Reservia hotels reservation app",
+    title: "Reservia",
+    description: "Hotel accommodation booking layout responsive across desktop and mobile breakpoints.",
     projectLink: "https://chicoumbetov.github.io/umbetov_shynggys_2_18042021/",
     screenshots: [reservia2],
+    usedTechno: "HTML5, CSS3, Flexbox",
   },
 ];
 
@@ -457,7 +407,7 @@ export const popularProducts = [
   },
   {
     id: 5,
-    img: "https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+    img: "https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bundle-_4_-2.png",
   },
   {
     id: 6,
