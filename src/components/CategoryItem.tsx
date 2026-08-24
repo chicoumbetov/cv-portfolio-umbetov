@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { FaGithub } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -37,98 +38,117 @@ const ProjectCardMedia = styled.div`
 const ProjectCardInformation = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  height: 250px;
-
+  padding: 15px;
+  height: 270px;
   justify-content: space-between;
 `;
 
 const Title = styled.h1`
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 700;
   color: black;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
   background-color: white;
-  padding: 3px;
+  padding: 5px;
   border-radius: 10px;
   text-align: center;
+`;
+
+const Description = styled.p`
+  font-size: 12px;
+  color: #4b5563;
+  margin-bottom: 8px;
+  text-align: center;
+  line-height: 1.4;
 `;
 
 const Technologies = styled.h4`
   font-size: 11px;
   color: black;
   margin-top: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   background-color: white;
-  padding: 3px;
+  padding: 4px;
   border-radius: 10px;
   text-align: center;
-
   border: solid 0.5px black;
 `;
 
 const Button = styled.button`
   border: none;
-  padding: 5px;
+  padding: 6px 12px;
   background-color: white;
   color: black;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f3f4f6;
+  }
 `;
 
 type CategoryItemProps = {
   item: {
-    id: number;
-    img: string;
+    id: number | string;
+    img?: string;
     title: string;
     description?: string;
     projectLink?: string;
     backendLink?: string;
-    screenshots: (string | undefined)[];
+    screenshots?: (string | undefined)[]; // Marked as optional here
     githubLink?: string;
-    githubBack?: string
+    githubBack?: string;
     usedTechno?: string;
   };
   darkMode?: boolean;
 };
 
 const CategoryItem = ({ item, darkMode }: CategoryItemProps) => {
+  const { t } = useTranslation();
+  // Ensure screenshots defaults to an empty array if undefined
+  const screenshots = item.screenshots || [];
+
   return (
     <ProjectCardContainer className="col-12 col-lg-4">
       <ProjectCard>
-        <ProjectCardMedia>
-          <Carousel autoPlay showThumbs={false} infiniteLoop showArrows={true}>
-            {[item.img, ...item.screenshots].map(
-              (src, index) =>
-                src && (
-                  <div key={index}>
-                    <ProjectCardImage
-                      className={``}
-                      src={src}
-                      alt={`Slide ${index}`}
-                    />
-                  </div>
-                )
-            )}
-          </Carousel>
-        </ProjectCardMedia>
+        {item.img && (
+          <ProjectCardMedia>
+            <Carousel autoPlay showThumbs={false} infiniteLoop showArrows={true}>
+              {[item.img, ...screenshots].map(
+                (src, index) =>
+                  src && (
+                    <div key={index}>
+                      <ProjectCardImage
+                        src={src}
+                        alt={`Slide ${index}`}
+                      />
+                    </div>
+                  )
+              )}
+            </Carousel>
+          </ProjectCardMedia>
+        )}
         <ProjectCardInformation>
           <div>
             <Title>{item.title}</Title>
-            {/*item?.description && (
-              <Description>{item?.description}</Description>
-            )*/}
-            <Technologies>Technologies: {item.usedTechno}</Technologies>
+            {item?.description && (
+              <Description>{item.description}</Description>
+            )}
+            <Technologies>{t("projects.technologies", "Technologies")}: {item.usedTechno}</Technologies>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center mt-2">
             {item.githubLink && (
               <div className="socials">
                 <a
                   href={item.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="GitHub Repository"
                   className={`ico-circle border-1 rounded-full justify-center text-center align-center ${
                     darkMode
                       ? "text-white bg-black border-white"
@@ -149,7 +169,7 @@ const CategoryItem = ({ item, darkMode }: CategoryItemProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>Live Demo</Button>
+                <Button>{t("projects.liveDemo", "Live Demo")}</Button>
               </a>
             )}
             {item.backendLink && (
@@ -158,7 +178,7 @@ const CategoryItem = ({ item, darkMode }: CategoryItemProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>Back - End Live</Button>
+                <Button>{t("projects.backendLive", "Back - End Live")}</Button>
               </a>
             )}
             {item.githubBack && (
@@ -167,6 +187,7 @@ const CategoryItem = ({ item, darkMode }: CategoryItemProps) => {
                   href={item.githubBack}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Backend GitHub Repository"
                   className={`ico-circle border-1 rounded-full justify-center text-center align-center ${
                     darkMode
                       ? "text-white bg-black border-white"
